@@ -795,3 +795,12 @@ li h5 {
             transition-duration: 2s;
     font-size: 1em;
 }
+
+
+/*JAVASCRIPT TOGGLE CLASSES*/
+
+/*use display list item for their current class portfolio item*/
+
+.hide {
+	display: none;
+}

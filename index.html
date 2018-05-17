@@ -21,6 +21,9 @@
 	<!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
+<!-- jQuery replace w/ vanilla JS -->
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
 
@@ -73,7 +76,7 @@
 				<hr>
 			</h3>
 			<p>
-				Although I do utilize powerful technologies like Bootstrap, this portfolio was completed without them. It's a demonstration of my raw HTML, CSS, JS abilities. Because of this, some of the sites functionalities are still a work in progress. As I continue to grow my skills and abilities in Vanilla JS and CSS animations, I will add components to make the site more engaging and dynamic. My projects are layed out in order, the first website to the last.
+				Although I do utilize powerful technologies like Bootstrap, this portfolio was completed without them. It's a demonstration of my raw HTML, CSS, JS abilities <em>(some jQuery was temporarily added and will be replaced)</em>. Because of this, some of the sites functionalities are still a work in progress. As I continue to grow my skills and abilities in JS and CSS animations, I will add components to make the site more engaging and dynamic. My projects are layed out in order, the first website to the last.
 			</p>
 	</section>
 
@@ -102,28 +105,28 @@
 		</h3>
 		<ul class="portfolioOptions">
 			<li>
-				<a href="#">
+				<a id="btnAll">
 					All
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a id="rawCss">
 					HTML5 & CSS3
 				</a>
 			</li>
 			<li>
-				<a href="#"> 
+				<a id="btnTemplate"> 
 					Template Sites
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a id="btnJavaApp">
 					Javascript Apps
 				</a>
 			</li>
 		</ul>
 		<ul id="portfolio-images">
-			<li class="portfolioItem">
+			<li class="portfolioItem usedTemplate">
 				<a href="https://bbaccs.github.io/holySmokes/">
 					<h6>
 						First site. Template used. Not fully responsive.
@@ -135,7 +138,7 @@
 					<span class="span3"></span>
 				</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem rawCss">
 				<a href="https://bbaccs.github.io/KulaYogaLiveHere/">
 					<h6>
 						Built with 
@@ -147,7 +150,7 @@
 					<span class="span3"></span>
 				</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem usedTemplate">
 				<a href="https://bbaccs.github.io/andoverTransmissionLive/">
 					<h6 class="h6">
 						Built with a Template
@@ -158,7 +161,7 @@
 						<span class="span3"></span>
 				</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem rawCss">
 				<a href="">
 					<h6>
 						HTML, CSS only, site rebuilt
@@ -169,7 +172,7 @@
 					<span class="span3"></span>
 				</a>	
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem usedTemplate">
 					<a href="http://www.wacarquote.com/bbaccs/DMCLLC/">
 						<h6>
 							Built with a Template
@@ -180,7 +183,7 @@
 						<span class="span3"></span>
 					</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem rawCss">
 				<a href="#">
 					<h6>
 						Built with 
@@ -192,11 +195,11 @@
 					<span class="span3"></span>
 				</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem jsApp">
 				<a href="https://bbaccs.github.io/theGreatColorGameEver2/">
 					<h6>
-						Built with 
-						<br> Vanilla J.S. Only.
+						Built with
+						<br> Vanilla J.S.
 					</h6>
 					<img src="img/colorGame.PNG">
 					<span class="span1"></span>
@@ -204,7 +207,7 @@
 					<span class="span3"></span>
 				</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem jsApp">
 				<a href="https://bbaccs.github.io/toDoList/">
 					<h6>
 						 built with jQuery.
@@ -215,7 +218,7 @@
 					<span class="span3"></span>
 				</a>
 			</li>
-			<li class="portfolioItem">
+			<li class="portfolioItem jsApp">
 				<a>
 					<h6>
 						J.S. APP Coming soon!
@@ -241,7 +244,7 @@
 				<i class="fas fa-laptop"></i>
 				<br>Web Development
 				<p>
-					Expert in HTML5, CSS3, and BOOTSTRAP4. Currently honing skills in Vanilla Javascript, and mastering the basics first. Clean, crisp, D.R.Y code. Skills in photo editing, Command Line, and Version Control (Git).
+					Expert in HTML, CSS, and BOOTSTRAP. Currently honing skills in Vanilla Javascript, and mastering the basics first. Clean, crisp, D.R.Y code. Skills in photo editing, Command Line, and Version Control (Git).
 				</p>
 			</li>
 		</ul>
@@ -337,7 +340,7 @@
 
 	<footer class="footer">
 		<div> 
-			Built using HTML5, CSS3 & JS. by: Brian Baccarella
+			Built using HTML, CSS & jQuery. by: Brian Baccarella
 		</div>
 		<div class="socialMediaContainer">
 			<li>
@@ -364,6 +367,6 @@
 			</li>	
 		</div>
 	</footer>
-
+<script type="text/javascript" src="portfolio.js"></script>
 </body>
 </html>
