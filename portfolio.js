@@ -22,6 +22,8 @@ $('#rawCss').on('click', function(){
 	$('ul#portfolio-images li.usedTemplate').addClass('hide');
 })
 
+
+
 // Vanilla JS
 
 
@@ -42,11 +44,11 @@ $('#rawCss').on('click', function(){
 // WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
 
 // set vars
-var btnJavaApp = document.querySelector('#btnJavaApp');
-var noJava = document.getElementsByClassName('jsApp');
-var btnTemplate = document.querySelector('#btnTemplate');
-var template = document.getElementsByClassName('usedTemplate');
-var showAll = document.querySelector('#btnAll')
+// var btnJavaApp = document.querySelector('#btnJavaApp');
+// var noJava = document.getElementsByClassName('jsApp');
+// var btnTemplate = document.querySelector('#btnTemplate');
+// var template = document.getElementsByClassName('usedTemplate');
+// var showAll = document.querySelector('#btnAll')
 
 
 // CODE
