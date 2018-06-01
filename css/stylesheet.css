@@ -476,8 +476,8 @@ li h5 {
 	.contactMe h5 {
 		margin-bottom: 50px;
 		font-size: 1.25em;
-		margin-left: 20px;
-	
+		margin-left: 95px;
+		text-align: center;
 	}
 
 	.contactMe p {
@@ -485,9 +485,10 @@ li h5 {
 		margin-left: 20px;
 	}
 
-	.contactParagraph {
-		margin-left: 20px;
+	#contactParagraph {
 		margin-right: 20px;
+		margin-left: 100px;
+		text-align: center;
 	}
 
 	.contactParagraph2 {

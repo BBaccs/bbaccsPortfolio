@@ -29,10 +29,10 @@
 
 
 
-// WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
-// WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
 
-// set vars
+
+// Portfolio section 
+//set vars
 var btnJavaApp = document.querySelector('#btnJavaApp');
 var noJava = document.getElementsByClassName('noJS');
 var btnTemplate = document.querySelector('#btnTemplate');
@@ -41,8 +41,6 @@ var btnShowAll = document.querySelector('#btnAll');
 var btnRaw = document.querySelector("#btnRaw");
 var rawCSS = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
 
-
-// CODE
 btnShowAll.addEventListener('click', function () {
 	showPortfolioItems();
 })
@@ -74,9 +72,6 @@ function showPortfolioItems() {
 		portfolioItem[i].classList.remove('hide');
 	}
 }
-
-// WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
-// WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
 
 
 // bad code
