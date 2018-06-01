@@ -1,42 +1,31 @@
-// jQuery
+// working jQuery code
 
-$('#btnJavaApp').on('click', function(){
-	$('ul#portfolio-images li').removeClass('hide');
-	$('ul#portfolio-images li.usedTemplate').addClass('hide');
-	$('ul#portfolio-images li.rawCss').addClass('hide');
-})
+// $('#btnJavaApp').on('click', function(){
+// 	$('ul#portfolio-images li').removeClass('hide');
+// 	$('ul#portfolio-images li.usedTemplate').addClass('hide');
+// 	$('ul#portfolio-images li.rawCss').addClass('hide');
+// })
 
-$('#btnTemplate').on('click', function() {
-	$('ul#portfolio-images li').removeClass('hide');
-	$('ul#portfolio-images li.rawCss').addClass('hide');
-	$('ul#portfolio-images li.jsApp').addClass('hide');
-})
+// $('#btnTemplate').on('click', function() {
+// 	$('ul#portfolio-images li').removeClass('hide');
+// 	$('ul#portfolio-images li.rawCss').addClass('hide');
+// 	$('ul#portfolio-images li.jsApp').addClass('hide');
+// })
 
-$('#btnAll').on('click', function(){
-	$('ul#portfolio-images li').removeClass('hide');
-})
+// $('#btnAll').on('click', function(){
+// 	$('ul#portfolio-images li').removeClass('hide');
+// })
 
-$('#rawCss').on('click', function(){
-	$('ul#portfolio-images li').removeClass('hide');
-	$('ul#portfolio-images li.jsApp').addClass('hide');
-	$('ul#portfolio-images li.usedTemplate').addClass('hide');
-})
-
-
-
-// Vanilla JS
+// $('#rawCss').on('click', function(){
+// 	$('ul#portfolio-images li').removeClass('hide');
+// 	$('ul#portfolio-images li.jsApp').addClass('hide');
+// 	$('ul#portfolio-images li.usedTemplate').addClass('hide');
+// })
 
 
 
-// addEvent();
 
-// function addEvent(){
-// 	for(var i = 0; i < noJava.length; i++){
-// 		btnJavaApp.addEventListener('click', function(){
-// 			noJava[i].classList.add('hide');
-// 		});
-// 	}
-// }
+
 
 
 
@@ -44,45 +33,50 @@ $('#rawCss').on('click', function(){
 // WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
 
 // set vars
-// var btnJavaApp = document.querySelector('#btnJavaApp');
-// var noJava = document.getElementsByClassName('jsApp');
-// var btnTemplate = document.querySelector('#btnTemplate');
-// var template = document.getElementsByClassName('usedTemplate');
-// var showAll = document.querySelector('#btnAll')
+var btnJavaApp = document.querySelector('#btnJavaApp');
+var noJava = document.getElementsByClassName('noJS');
+var btnTemplate = document.querySelector('#btnTemplate');
+var template = document.getElementsByClassName('noTemplate');
+var btnShowAll = document.querySelector('#btnAll');
+var btnRaw = document.querySelector("#btnRaw");
+var rawCSS = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
 
 
 // CODE
-// showAll.addEventListener('click', function () {
-// 	showPortfolioItems();
-// })
+btnShowAll.addEventListener('click', function () {
+	showPortfolioItems();
+})
 
-// function showPortfolioItems() {
-// 	var portfolioItem = document.getElementsByClassName('portfolioItem');
-// 	for (var i = 0; i < portfolioItem.length; i++) {
-// 		portfolioItem[i].classList.remove('hide');
-// 	}
-// }
+btnRaw.addEventListener('click', function(){
+	showPortfolioItems();
+	for (var i = 0; i < rawCSS.length; i++) {
+		rawCSS[i].classList.add('hide');
+	}
+})
 
-// btnJavaApp.addEventListener('click', function(){
-// 	showPortfolioItems();
-// 	for (var i = 0; i < noJava.length; i++) {
-// 		noJava[i].classList.add('hide');
-// 	}
-// })
+btnJavaApp.addEventListener('click', function(){
+	showPortfolioItems();
+	for (var i = 0; i < noJava.length; i++) {
+		noJava[i].classList.add('hide');
+	}
+})
 
-// btnTemplate.addEventListener('click', function(){
-// 	showPortfolioItems();
-// 	for (var i = 0; i < template.length; i++) {
-// 		template[i].classList.add('hide');
-// 	}
-// })
+btnTemplate.addEventListener('click', function(){
+	showPortfolioItems();
+	for (var i = 0; i < template.length; i++) {
+		template[i].classList.add('hide');
+	}
+})
+
+function showPortfolioItems() {
+	var portfolioItem = document.getElementsByClassName('portfolioItem');
+	for (var i = 0; i < portfolioItem.length; i++) {
+		portfolioItem[i].classList.remove('hide');
+	}
+}
 
 // WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
 // WORKING JS, CHANGE CLASSES AND HTML + CSS CLASS
-
-
-
-
 
 
 // bad code
