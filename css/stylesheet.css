@@ -568,13 +568,12 @@ li h5 {
 
 /*MEDIA QUERIES*/
 
-	/*header media*/
-	@media (max-width: 850px) {
-		.main-header {
+	/*header Media for Mobile Landscape*/
+	@media (max-width: 900px) and (max-height: 415px){
+	.main-header {
 		margin-top: 50px;
 		}	
 	}
-
 	/*nav MEDIA*/
 
 	@media (max-width: 500px){
