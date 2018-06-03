@@ -568,24 +568,16 @@ li h5 {
 
 /*MEDIA QUERIES*/
 
-		/*footer MEDIA*/
-@media (max-width: 1200px){
-	.footer div {
-	font-size: .75em;
-	}
-}
+/*Main picture media*/
 
-@media (max-width: 1260px) {
-	.socialMediaContainer {
-		margin-right: 100px;
+@media all and (orientation:landscape) { 
+	div {
+		display: none;
 	}
-}
+ }
 
-@media (max-width: 915px) {
-	.socialMediaContainer {
-		margin-right: 50px;
-	}
-}
+
+
 	/*nav MEDIA*/
 
 	@media (max-width: 500px){
@@ -684,6 +676,24 @@ li h5 {
 	}
 
 /*	footer MEDIA*/
+
+@media (max-width: 1200px){
+	.footer div {
+	font-size: .75em;
+	}
+}
+
+@media (max-width: 1260px) {
+	.socialMediaContainer {
+		margin-right: 100px;
+	}
+}
+
+@media (max-width: 915px) {
+	.socialMediaContainer {
+		margin-right: 50px;
+	}
+}
 
 	@media (max-width: 800px){
 		.footer {
