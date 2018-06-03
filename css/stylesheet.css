@@ -161,7 +161,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	height: 100%;
-	margin-top: 125px;
+	margin-top: 150px;
 	font-size: 1.8rem;
 	font-family: 'Helios_Rounded';
 }
@@ -568,15 +568,12 @@ li h5 {
 
 /*MEDIA QUERIES*/
 
-/*Main picture media*/
-
-@media all and (orientation:landscape) { 
-	div {
-		display: none;
+	/*header media*/
+	@media (max-width: 850px) {
+		.main-header {
+		margin-top: 50px;
+		}	
 	}
- }
-
-
 
 	/*nav MEDIA*/
 
