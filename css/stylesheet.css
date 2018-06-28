@@ -235,6 +235,7 @@ a {
 	color: white;
 	text-shadow: 1px 1px 1px black;
 	padding-bottom: 50px;
+	padding-top: 5px;
 	/*transform-origin: top right;
     transform: skewY(1deg);*/
     /*-webkit-clip-path: polygon(10% 1%, 100% 1%, 100% 96%, 7% 100%);*/

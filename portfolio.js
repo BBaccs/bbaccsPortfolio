@@ -24,13 +24,6 @@
 
 
 
-
-
-
-
-
-
-
 // Portfolio section 
 //set vars
 var btnJavaApp = document.querySelector('#btnJavaApp');
