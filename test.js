@@ -10,7 +10,7 @@ var portfolioItems = document.querySelectorAll('.portfolioItem');
 
 //set functionS
 
-function showAll(){
+function showAllPortfolioItems(){
     for(i = 0; i < portfolioItems.length; i++){
         portfolioItems[i].classList.remove('hide');
     }
@@ -20,11 +20,11 @@ function showAll(){
 //events
 
 btnShowAll.addEventListener('click', function () {
-    showAll();
+    showAllPortfolioItems();
 })
 
 btnJavaApp.addEventListener('click', function () {
-    showAll();
+    showAllPortfolioItems();
     for(i = 0; i < noJava.length; i++){
         noJava[i].classList.add('hide');
     }
@@ -32,7 +32,7 @@ btnJavaApp.addEventListener('click', function () {
 
 
 btnTemplate.addEventListener('click', function () {
-    showAll();
+    showAllPortfolioItems();
     for(i = 0; i < template.length; i++){
         template[i].classList.add('hide');
     }
@@ -40,7 +40,7 @@ btnTemplate.addEventListener('click', function () {
 
 
 btnRaw.addEventListener('click', function () {
-    showAll();
+    showAllPortfolioItems();
     for(i = 0; i < rawCSS.length; i++){
         rawCSS[i].classList.add('hide');
     }
