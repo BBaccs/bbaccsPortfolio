@@ -34,6 +34,8 @@ var btnShowAll = document.querySelector('#btnAll');
 var btnRaw = document.querySelector("#btnRaw");
 var rawCSS = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
 
+
+
 btnShowAll.addEventListener('click', function () {
 	showPortfolioItems();
 })
@@ -59,12 +61,18 @@ btnTemplate.addEventListener('click', function(){
 	}
 })
 
+
+//declare functions
 function showPortfolioItems() {
 	var portfolioItem = document.getElementsByClassName('portfolioItem');
 	for (var i = 0; i < portfolioItem.length; i++) {
 		portfolioItem[i].classList.remove('hide');
 	}
 }
+
+
+
+
 
 
 // bad code
@@ -80,31 +88,6 @@ function showPortfolioItems() {
 // 	})
 // 	}
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
