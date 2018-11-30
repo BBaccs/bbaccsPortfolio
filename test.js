@@ -1,11 +1,11 @@
 //set vars
 var btnJavaApp = document.querySelector('#btnJavaApp');
-var noJava = document.getElementsByClassName('noJS');
+var javascriptApp = document.querySelectorAll('.portfolioItem:not(.javascript');
 var btnTemplate = document.querySelector('#btnTemplate');
-var template = document.getElementsByClassName('noTemplate');
+var templateSite = document.querySelectorAll('.portfolioItem:not(.template');
 var btnShowAll = document.querySelector('#btnAll');
 var btnRaw = document.querySelector("#btnRaw");
-var rawCSS = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
+var rawCssSite = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
 var portfolioItems = document.querySelectorAll('.portfolioItem');
 
 //set functionS
@@ -23,25 +23,24 @@ btnShowAll.addEventListener('click', function () {
     showAllPortfolioItems();
 })
 
-btnJavaApp.addEventListener('click', function () {
+btnTemplate.addEventListener('click', function () {
     showAllPortfolioItems();
-    for(i = 0; i < noJava.length; i++){
-        noJava[i].classList.add('hide');
+    for(i = 0; i < templateSite.length; i++){
+        templateSite[i].classList.add('hide');
     }
 })
 
-
-btnTemplate.addEventListener('click', function () {
+btnJavaApp.addEventListener('click', function () {
     showAllPortfolioItems();
-    for(i = 0; i < template.length; i++){
-        template[i].classList.add('hide');
+    for(i = 0; i < javascriptApp.length; i++){
+        javascriptApp[i].classList.add('hide');
     }
 })
 
 
 btnRaw.addEventListener('click', function () {
     showAllPortfolioItems();
-    for(i = 0; i < rawCSS.length; i++){
-        rawCSS[i].classList.add('hide');
+    for(i = 0; i < rawCssSite.length; i++){
+        rawCssSite[i].classList.add('hide');
     }
 })
