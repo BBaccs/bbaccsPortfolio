@@ -41,7 +41,9 @@ h3 {
     -webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
             box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
     width: 100%;
-    height: 100%;
+	height: 100%;
+	max-width: 475px;
+	max-height: 275px;
 }
 
  hr {
@@ -247,7 +249,8 @@ a {
 .programming-language-container {
 	display: flex;
 	flex-wrap: inherit;
-    justify-content: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .programming-language-container li:hover {
@@ -275,6 +278,7 @@ a {
 	    flex-wrap: wrap;
 	background-color: #f9f9f9;
 	padding-bottom: 50px;
+	width: 100%;
 }
 
 .portfolio h3 {
@@ -317,12 +321,13 @@ a {
 	line-height: 1;
     font-weight: 700;
 	font-size: 1rem;
-	transition: background .3s;
+	transition: .4s;
     padding: 1rem 1.5rem;
     border-radius: 18px;
 	max-width: 30rem;
 	padding-left: 2.25rem;
-    padding-right: 2.25rem;
+	padding-right: 2.25rem;
+	width: 100%;
 }
 
 .button:hover {
@@ -868,6 +873,11 @@ li h5 {
     font-size: 1em;
 }
 
+.reactAlert {
+	background-color: red;
+	width: 100%;
+	height: 30px;
+}
 
 /*JAVASCRIPT TOGGLE CLASSES*/
 
