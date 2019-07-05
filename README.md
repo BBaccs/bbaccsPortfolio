@@ -1,2 +1,2 @@
-Check out my portolfio which was made from scratch.
-https://bbaccs.github.io/bbaccsPortfolio/
+You can also view it on Netlify here:
+https://www.baccarelladev.com
