@@ -1,2 +1,4 @@
 You can also view it on Netlify here:
-https://www.baccarelladev.com
+
+
+This portfolio was built with Check out my portfolio, made with HTML CSS & JavScript and without Bootstrap, jQuery or any other library.
