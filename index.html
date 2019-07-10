@@ -19,6 +19,7 @@
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/portfolioStyle.css">
+<link rel="stylesheet" href="css/formStyle.css">
 
 </head>
 <body>
@@ -395,82 +396,48 @@
 	</section>
 
 	<!-- contact me -->
-	<h3>
-		Contact Me<hr>
-	</h3>
-	<section id="contactMe" class="contactMe">
-			<div>
-				<h5>
-					Let me know you're interested:
-				</h5>
-				<p id="contactParagraph">
-					I'm willing to relocate anywhere in the United States or Canada. Please contact me via Email, or LinkedIn. 
-				</p>
-			</div>
-				<div class="contactInfo">
-					<i></i>
-					<h6>
-						Email
-					</h6>	
-					<p>
-						baccarellab@gmail.com
-					</p>	
-
-					<i></i>
-					<h6>
-						Location
-					</h6>
-					<p>
-						Tampa, FL
-					</p>
-					<i></i>
-					<h6>
-						Phone
-					</h6>
-					<p>
-						862-268-0778
-					</p>
-				</div>
-			</div>
-	</section>
-
-
-	<section class="contactMe2">
-			<div>
-				<h5>
-					Let me know your interested:
-				</h5>
-				<p class="contactParagraph contactParagraph2">
-					Willing to relocate anywhere in the United States or Canada. Please contact me via Email, Github, 
-					or LinkedIn. Please visit my portfolio often too see consistent improvements as I acquire new skills.
-				</p>
-			</div>
-				<div class="contactInfo contactInfo2">
-					<i></i>
-					<h6>
-						Email
-					</h6>	
-					<p>
-						baccarellab@gmail.com
-					</p>	
-
-					<i></i>
-					<h6>
-						Location
-					</h6>
-					<p>
-						Tampa, FL
-					</p>
-					<i></i>
-					<h6>
-						Phone
-					</h6>
-					<p>
-						862-268-0778
-					</p>
-				</div>
-			</div>
-	</section>
+	<section class="container-contact">
+        <h3><span>Contact Me</span></h3>
+        <div class="wrapper">
+            <div class="contact-info">
+                <h4>Brian Baccarella: <br> Front End Developer</h4>
+                <p>Fill out this form and I will contact you within 2 business days. Otherwise you can reach out to me via my personal cell and or email. Thanks for viewing!</p>
+                <ul>
+                    <li><i class="fa fa-road"></i> Tampa FL, USA</li>
+                    <li><i class="fa fa-phone"></i> (862) 268-0778</li>
+                    <li><i class="fa fa-envelope"></i> baccarellab@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4>Email Me</h4>
+                <form id="contactForm" netlify>
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Person of contact">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company" required placeholder="Awesome Devs LLC">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" required placeholder="companyEmail@gmail.com">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" placeholder="555-555-5555">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="If you'd like to send me some info about the skills you're looking for, please enter it here!"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
 
 	<!-- footer -->
 
@@ -479,7 +446,7 @@
 			Built using HTML, CSS & JS by: Brian Baccarella.
 		</div>
 		<div class="socialMediaContainer">
-			<!-- <ul> -->
+			<ul>
 				<li>
 					<a class="socialMediaLink" href="https://www.facebook.com/brian.baccarella">
 						<i style="transform: rotate(-30deg);" class="fab fa-facebook-f"></i>
@@ -499,7 +466,7 @@
 						<i style="transform: rotate(-30deg);" class="fab fa-github"></i>
 					</a>
 				</li>
-			<!-- </ul> -->
+			</ul>
 		</div>
 	</footer>
 <script type="text/javascript" src="portfolio.js"></script>
