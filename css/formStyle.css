@@ -1,10 +1,8 @@
-.container-contact > * {
-    box-sizing: border-box;
-}
 
-.container-contact {
+
+section.container-contact {
     color: #485e74;
-    line-height: 1.6;
+    line-height: 1.4;
     padding: 1em;
     max-width: 1170px;
     margin-left: auto;
@@ -14,7 +12,7 @@
     font-size: 16px;
 }
 
-.container-contact > h3{
+section.container-contact > h3{
     text-align: center;
     font-size: 2em;
     color: black;
@@ -32,13 +30,13 @@
     padding: 1em;
 }
 
-.contact-info {
+div.contact-info {
     background-color: #444444;
     color: white;
 }
 
-.contact-info h3, .contact-info ul {
-    text-align: center;
+div.contact-info h4, .contact-info li {
+    text-align: left;
     margin: 0 0 1rem 0;
 }
 

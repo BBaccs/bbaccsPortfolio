@@ -446,81 +446,8 @@ li h5 {
 	max-width: 30%;
 	}
 
-/*contact me*/
+/*contact form...See seperate css/formStyle.css file*/
 
-	.contactMe {
-		display: -ms-grid;
-		display: grid;
-		-ms-grid-columns: 1fr 1fr;
-		    grid-template-columns: 1fr 1fr;
-		position: relative;
-		padding-top: 30px;
-		
-	}
-
-	.contactMe h3 {
-		position: absolute;
-		left: 0;
-		right: 0;
-	}
-
-	.contactMe div {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-
-	.contactInfo {
-		margin-left: auto; 
-		margin-right: auto;
-	}
-
-	.contactMe h5, h6 {
-		text-align: initial;
-		margin: 0px;
-	}
-
-	.contactMe h6 {
-		font-size: .9em;
-		
-	}
-
-	.contactMe h5 {
-		margin-bottom: 50px;
-		font-size: 1.25em;
-		margin-left: 95px;
-		text-align: center;
-	}
-
-	.contactMe p {
-		margin-top: 0;
-		margin-left: 20px;
-	}
-
-	#contactParagraph {
-		margin-right: 20px;
-		margin-left: 100px;
-		text-align: center;
-	}
-
-	.contactParagraph2 {
-		text-align: center;
-	}
-
-	.contactInfo2 {
-		text-align: center;
-	}
-
-	.contactInfo2 h6 {
-		text-align: center;
-	}
 
 /*footer*/
 
@@ -678,27 +605,6 @@ li h5 {
 	}
 }
 
-
-	/*contactMe MEDIA*/
-
-	@media (max-width: 600px){
-		.contactMe {
-			margin-left: 10px;
-			margin-right: 10px;
-		}
-	}
-
-	@media (max-width: 599px) {
-		.contactMe {
-			display: none;
-		}
-	}
-
-	@media (min-width: 600px) {
-		.contactMe2 {
-			display: none;
-		}
-	}
 
 /*	footer MEDIA*/
 
