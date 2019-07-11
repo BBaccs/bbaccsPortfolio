@@ -23,8 +23,9 @@ function submitForm(e) {
     const contactForm = document.querySelector('#contactForm'),
             nameVal = contactForm.name.value,
             phoneVal = contactForm.phone.value,
+
     // Regexpressions, form validation
-          phoneValidation = /^([0-9]{3}[\- ]){2}[0-9]{4}$/,
+    const phoneValidation = /^([0-9]{3}[\- ]){2}[0-9]{4}$/,
           lettersValidation = /^[a-z]{2}/gi,
           numbersValidation = /[0-9]/;
 
@@ -39,7 +40,6 @@ function submitForm(e) {
         alert('Name must start with at least two letters, and cannot contain numbers.');
         e.preventDefault();
     }
-    console.log(phoneVal, nameVal)
 }
 
 
