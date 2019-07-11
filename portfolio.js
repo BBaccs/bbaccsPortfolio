@@ -1,19 +1,44 @@
-//Set Variables
-var btnJavaApp = document.querySelector('#btnJavaApp');
-var javascriptApp = document.querySelectorAll('.portfolioItem:not(.javascript');
-var btnTemplate = document.querySelector('#btnTemplate');
-var templateSite = document.querySelectorAll('.portfolioItem:not(.template');
-var btnShowAll = document.querySelector('#btnAll');
-var btnRaw = document.querySelector("#btnRaw");
-var rawCssSite = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
-var portfolioItems = document.querySelectorAll('.portfolioItem');
-var btnReact = document.querySelector("#btnReactApp");
+//Set constiables
+const btnJavaApp = document.querySelector('#btnJavaApp');
+const javascriptApp = document.querySelectorAll('.portfolioItem:not(.javascript');
+const btnTemplate = document.querySelector('#btnTemplate');
+const templateSite = document.querySelectorAll('.portfolioItem:not(.template');
+const btnShowAll = document.querySelector('#btnAll');
+const btnRaw = document.querySelector("#btnRaw");
+const rawCssSite = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
+const portfolioItems = document.querySelectorAll('.portfolioItem');
+const btnReact = document.querySelector("#btnReactApp");
 
 
 //Set functions
 function showAllPortfolioItems(){
     for(i = 0; i < portfolioItems.length; i++){
         portfolioItems[i].classList.remove('hide');
+    }
+}
+
+// Submit form
+function submitForm(e) {
+    // Get values
+    const contactForm = document.querySelector('#contactForm'),
+            nameVal = contactForm.name.value,
+            phoneVal = contactForm.phone.value,
+
+    // Regexpressions, form validation
+    const phoneValidation = /^([0-9]{3}[\- ]){2}[0-9]{4}$/,
+          lettersValidation = /^[a-z]{2}/gi,
+          numbersValidation = /[0-9]/;
+
+    //Validate phone #, spaces at the end will be trimmed
+    if (!phoneValidation.test(phoneVal.trim())) {
+        alert(`If you choose to fill out a number, it can only contain spaces and '-' between numbers and must be propely formatted, 555-555-5555`);
+        e.preventDefault();
+    }
+    // Name must have at least two letters, and cannot contain numbers.
+    if (lettersValidation.test(nameVal) & !numbersValidation.test(nameVal)) {
+    } else {
+        alert('Name must start with at least two letters, and cannot contain numbers.');
+        e.preventDefault();
     }
 }
 
@@ -64,3 +89,6 @@ btnReact.addEventListener('click', function (){
         document.querySelector('.reactAlert').remove();
     }, 6000);
 });
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
