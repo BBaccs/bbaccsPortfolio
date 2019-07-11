@@ -1,6 +1,6 @@
 
 
-section.container-contact {
+section#container-contact {
     color: black;
     line-height: 1.4;
     padding: 1em;
@@ -12,7 +12,7 @@ section.container-contact {
     font-size: 16px;
 }
 
-section.container-contact > h3{
+section#container-contact > h3{
     text-align: center;
     font-size: 2em;
     color: black;
@@ -91,7 +91,7 @@ div.contact-info h4, .contact-info li {
     .wrapper > * {
         padding: 2em;
     }
-    .container-contact > h4, .contact-info > ul, .contact-info > h3  {
+    #container-contact > h4, .contact-info > ul, .contact-info > h3  {
         text-align: left;
     } 
 }
