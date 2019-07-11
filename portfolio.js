@@ -29,7 +29,7 @@ function submitForm(e) {
           numbersValidation = /[0-9]/;
 
     //Validate phone #, spaces at the end will be trimmed
-    if (!phoneValidation.test(phoneVal.trim())) {
+    if (!phoneValidation.test(phoneVal.trim()) & phoneVal !== '') {
         e.preventDefault();
 
         //create div
@@ -48,7 +48,7 @@ function submitForm(e) {
         }, 8000);  
     }
     // Name must have at least two letters, and cannot contain numbers.
-    if (lettersValidation.test(nameVal) & !numbersValidation.test(nameVal)) {
+    if (lettersValidation.test(nameVal) & !numbersValidation.test(nameVal) || nameVal === '') {
     } else {
         e.preventDefault();
             //create div
