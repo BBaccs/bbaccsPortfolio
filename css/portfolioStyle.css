@@ -652,7 +652,7 @@ li h5 {
 		}
 	}
 
-/*TESTING Animations*/
+/*Animations*/
 
 #portfolio-images li {
 	cursor: pointer;
@@ -738,16 +738,29 @@ li h5 {
     font-size: 1em;
 }
 
-.reactAlert {
-	background-color: red;
-	width: 100%;
-	height: 30px;
-}
+
 
 /*JAVASCRIPT TOGGLE CLASSES*/
+.reactAlert, .contactAlert {
+	background-color: #ff0000f8;
+	width: 200%;
+	height: 20px;
+	padding: 1em;
+}
+
+.contactAlert {
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	border: 1px solid black;
+	margin-top: 10px;
+	box-shadow: 0 0 2px rgba(72,94,116,0.7);
+}
 
 /*use display list item for their current class portfolio item*/
-
 .hide {
 	display: none;
 }

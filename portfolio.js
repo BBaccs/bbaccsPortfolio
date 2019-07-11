@@ -30,14 +30,41 @@ function submitForm(e) {
 
     //Validate phone #, spaces at the end will be trimmed
     if (!phoneValidation.test(phoneVal.trim())) {
-        alert(`If you choose to fill out a number, it can only contain spaces and '-' between numbers and must be propely formatted, 555-555-5555`);
         e.preventDefault();
+
+        //create div
+        const div = document.createElement('div');
+        const contactSection = document.querySelector('#container-contact');
+        const contactHeading = document.getElementById('contact-heading');
+        //insert html
+        div.className = 'contactAlert';
+        //add text
+        div.appendChild(document.createTextNode(`If you choose to fill out a number, it can only contain spaces and '-' between numbers and must be propely formatted, 555-555-5555.`));
+        //insert before ul
+        contactSection.insertBefore(div, contactHeading);
+
+        setTimeout(function(){
+            document.querySelector('.contactAlert').remove();
+        }, 8000);  
     }
     // Name must have at least two letters, and cannot contain numbers.
     if (lettersValidation.test(nameVal) & !numbersValidation.test(nameVal)) {
     } else {
-        alert('Name must start with at least two letters, and cannot contain numbers.');
         e.preventDefault();
+            //create div
+            const div = document.createElement('div');
+            const contactSection = document.querySelector('#container-contact');
+            const contactHeading = document.getElementById('contact-heading');
+            //insert html
+            div.className = 'contactAlert';
+            //add text
+            div.appendChild(document.createTextNode(`Name must start with at least two letters, and cannot contain numbers.`));
+            //insert before ul
+            contactSection.insertBefore(div, contactHeading);
+    
+            setTimeout(function(){
+                document.querySelector('.contactAlert').remove();
+            }, 8000); 
     }
 }
 
@@ -83,7 +110,7 @@ btnReact.addEventListener('click', function (){
     //insert before ul
     section.insertBefore(div, portfolioImages);
 
-    //only display alert for 3 seconds
+    //only display alert for a few seconds
     setTimeout(function(){
         document.querySelector('.reactAlert').remove();
     }, 6000);
