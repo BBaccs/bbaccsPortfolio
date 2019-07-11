@@ -65,6 +65,9 @@ div.contact-info h4, .contact-info li {
 
 .contact form button, .contact form input, .contact form textarea {
     width: 100%;
+}
+
+.contact form button, .contact form input {
     padding: 1em;
 }
 
