@@ -209,11 +209,11 @@ h3 {
 	width: 100%;
 }
 
-.programming-language-container li:hover {
+/* .programming-language-container li:hover {
 	background-color: none;
 	position: relative;
 	bottom: 7.5px;
-}
+} */
 
 .prommaing-language-link:hover:before {
 	visibility: none;
