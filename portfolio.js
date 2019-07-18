@@ -119,19 +119,13 @@ btnTemplate.addEventListener('click', function () {
     }
 })
 
-btnTemplate.addEventListener('touchstart', function () {
-    showAllPortfolioItems();
-    for(i = 0; i < templateSite.length; i++){
-        templateSite[i].classList.add('hide');
-    }
-})
-
 btnJavaApp.addEventListener('click', function () {
     showAllPortfolioItems();
     for(i = 0; i < javascriptApp.length; i++){
         javascriptApp[i].classList.add('hide');
     }
 })
+
 
 btnRaw.addEventListener('click', function () {
     showAllPortfolioItems();
