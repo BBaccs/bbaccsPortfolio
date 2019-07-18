@@ -112,7 +112,7 @@ btnShowAll.addEventListener('click', function () {
     showAllPortfolioItems();
 })
 
-btnTemplate.addEventListener('click', function () {
+btnTemplate.addEventListener('hover', function () {
     showAllPortfolioItems();
     for(i = 0; i < templateSite.length; i++){
         templateSite[i].classList.add('hide');
