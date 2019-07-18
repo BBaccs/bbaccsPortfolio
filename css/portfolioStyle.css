@@ -761,8 +761,11 @@ li h5 {
 	padding: 1em;
 	color: white;
 }
+.contactAlert {
+	background-color: red;
+}
 
-.showAllAlert, .contactAlert {
+.showAllAlert {
 	background-color: green;
 }
 
