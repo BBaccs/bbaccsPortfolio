@@ -71,6 +71,44 @@ function submitForm(e) {
 
 //Set Event Listeners
 btnShowAll.addEventListener('click', function () {
+    const portfolioImagesHidden = document.querySelector('.hide');
+    if (portfolioImagesHidden) {
+        //create div
+        const div = document.createElement('div');
+        const section = document.querySelector('#portfolio');
+        const btnAllContainer = document.querySelector('#btnAllContainer');
+        //insert html
+        div.className = 'showAllAlert';
+
+        //add text
+        div.appendChild(document.createTextNode('Success! All projects are showing.'));
+        
+        //insert before ul
+        section.insertBefore(div, btnAllContainer);
+
+        //only display alert for a few seconds
+        setTimeout(function(){
+            document.querySelector('.showAllAlert').remove();
+        }, 4000);
+    } else {
+        //create div
+        const div = document.createElement('div');
+        const section = document.querySelector('#portfolio');
+        const btnAllContainer = document.querySelector('#btnAllContainer');
+        //insert html
+        div.className = 'showAllAlertFailed';
+
+        //add text
+        div.appendChild(document.createTextNode('All projects are already showing.'));
+        
+        //insert before ul
+        section.insertBefore(div, btnAllContainer);
+
+        //only display alert for a few seconds
+        setTimeout(function(){
+            document.querySelector('.showAllAlertFailed').remove();
+        }, 4000);
+    }
     showAllPortfolioItems();
 })
 

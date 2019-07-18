@@ -741,13 +741,15 @@ li h5 {
 
 
 /*JAVASCRIPT TOGGLE CLASSES*/
-.reactAlert, .contactAlert {
+.reactAlert {
 	background-color: #ff0000f8;
+	color: white;
 	width: 200%;
 	padding: 1em;
+	
 }
 
-.contactAlert {
+.contactAlert, .showAllAlert, .showAllAlertFailed {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
@@ -756,6 +758,17 @@ li h5 {
 	border: 1px solid black;
 	margin-top: 10px;
 	box-shadow: 0 0 2px rgba(72,94,116,0.7);
+	width: 200%;
+	padding: 1em;
+	color: white;
+}
+
+.showAllAlert {
+	background-color: green;
+}
+
+.showAllAlertFailed {
+	background-color: red;
 }
 
 /*use display list item for their current class portfolio item*/
