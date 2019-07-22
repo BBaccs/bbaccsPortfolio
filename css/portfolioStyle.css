@@ -38,6 +38,10 @@ h3 {
 	font-size: 2em;
 }
 
+.underlined-heading {
+	margin-bottom: 0px;
+}
+
 .enhanceImg {
 	border: 1px solid rgba(0,0,0,.2);
     -webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
