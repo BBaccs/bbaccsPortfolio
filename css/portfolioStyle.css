@@ -466,7 +466,7 @@ li h5 {
 	max-width: 30%;
 	}
 
-/*contact form...See css/formStyle.css file*/
+/*contact form...See seperate css/formStyle.css file*/
 
 
 /*footer*/
@@ -534,124 +534,6 @@ li h5 {
 	-webkit-transform: scaleX(0);
 	-ms-transform: scaleX(0);
 	    transform: scaleX(0);
-}
-
-/*Animations*/
-
-#portfolio-images li {
-	cursor: pointer;
-	position: relative;
-}
- 
-.span1, .span2, .span3 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0%;
-	height: 33.3%;
-	background-color: black;
-	opacity: .9;
-	-webkit-transition-duration: 2s;
-	     -o-transition-duration: 2s;
-	        transition-duration: 2s;
-	background-color: #202020;
-	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
-	        box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
-	z-index: 1;
-}
-
-.span2 {
-	position: absolute;
-	top: 33.3%;
-	background-color: #202020;
-	-webkit-transition-duration: 2s;
-	     -o-transition-duration: 2s;
-	        transition-duration: 2s;
-	left: 99.9%;
-	opacity: .95;
-}
-
-.span3 {
-	position: absolute;
-	top: 66.3%;
-	-webkit-transition-duration: 2s;
-	     -o-transition-duration: 2s;
-	        transition-duration: 2s;
-	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
-	        box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
-}
-
-
-#portfolio-images li:hover .span1,
-#portfolio-images li:hover .span3 {
-	width: 100%;
-	right: 0;
-}
-
-#portfolio-images li:hover .span2,
-#portfolio-images li:hover .span2 {
-	width: 100%;
-	left: 0;
-}
-
-#portfolio-images li h6 {
-	margin: 0;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    text-transform: uppercase;
-    -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
-    letter-spacing: 1px;
-    -webkit-transition-duration: 2s;
-         -o-transition-duration: 2s;
-            transition-duration: 2s;
-    color: white;
-    font-size: 0;
-    z-index: 1200;
-    text-shadow: 1px 1px 1px black;
-    width: 100%;
-}
-
-#portfolio-images li:hover h6 {
-    -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
-    -webkit-transition-duration: 2s;
-         -o-transition-duration: 2s;
-            transition-duration: 2s;
-    font-size: 1em;
-}
-
-/*JAVASCRIPT TOGGLE CLASSES*/
-
-.reactAlert,
-.contactAlert,
-.showAllAlert,
-.showAllAlertFailed {
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-	padding: 1em;
-	font-size: 1.25em;
-}
-.contactAlert,
-.showAllAlertFailed,
-.reactAlert {
-	color: red;
-}
-
-.showAllAlert {
-	color: green;
-}
-
-/*use display list item for their current class portfolio item*/
-.hide {
-	display: none;
 }
 
 /*MEDIA QUERIES*/
@@ -788,3 +670,121 @@ li h5 {
 			margin-left: 0px !important;
 		}
 	}
+
+/*Animations*/
+
+#portfolio-images li {
+	cursor: pointer;
+	position: relative;
+}
+ 
+.span1, .span2, .span3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 33.3%;
+	background-color: black;
+	opacity: .9;
+	-webkit-transition-duration: 2s;
+	     -o-transition-duration: 2s;
+	        transition-duration: 2s;
+	background-color: #202020;
+	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
+	        box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
+	z-index: 1;
+}
+
+.span2 {
+	position: absolute;
+	top: 33.3%;
+	background-color: #202020;
+	-webkit-transition-duration: 2s;
+	     -o-transition-duration: 2s;
+	        transition-duration: 2s;
+	left: 99.9%;
+	opacity: .95;
+}
+
+.span3 {
+	position: absolute;
+	top: 66.3%;
+	-webkit-transition-duration: 2s;
+	     -o-transition-duration: 2s;
+	        transition-duration: 2s;
+	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
+	        box-shadow: 0 1.8vw 4vw -0.7vw rgba(0,0,0,.2);
+}
+
+
+#portfolio-images li:hover .span1, #portfolio-images li:hover .span3 {
+	width: 100%;
+	right: 0;
+}
+
+#portfolio-images li:hover .span2, #portfolio-images li:hover .span2 {
+	width: 100%;
+	left: 0;
+}
+
+#portfolio-images li h6 {
+	margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    letter-spacing: 1px;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    color: white;
+    font-size: 0;
+    z-index: 1200;
+    text-shadow: 1px 1px 1px black;
+    width: 100%;
+}
+
+#portfolio-images li:hover h6 {
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    font-size: 1em;
+}
+
+
+
+/*JAVASCRIPT TOGGLE CLASSES*/
+
+.reactAlert,
+.contactAlert,
+.showAllAlert,
+.showAllAlertFailed {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	padding: 1em;
+	font-size: 1.25em;
+}
+.contactAlert,
+.showAllAlertFailed,
+.reactAlert {
+	color: red;
+}
+
+.showAllAlert {
+	color: green;
+}
+
+/*use display list item for their current class portfolio item*/
+.hide {
+	display: none;
+}
