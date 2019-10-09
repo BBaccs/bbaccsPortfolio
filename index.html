@@ -404,24 +404,25 @@
             <div class="contact">
                 <form id="contactForm" netlify>
                     <p>
-                        <label for="name">Name</label>
+												<label for="name">Name</label>
+												<!-- name attribute used to tie label to JS functionality -->
                         <input type="text" name="name" id="name" placeholder="Person of contact">
                     </p>
                     <p>
                         <label for="company">Company</label>
-                        <input type="text" name="company" required placeholder="Awesome Devs LLC">
+                        <input type="text" name="company" id="company" required placeholder="Awesome Devs LLC">
                     </p>
                     <p>
                         <label for="email">Email Address</label>
-                        <input type="email" name="email" required placeholder="companyEmail@gmail.com">
+                        <input type="email" name="email" id="email" required placeholder="companyEmail@gmail.com">
                     </p>
                     <p>
                         <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" placeholder="555-555-5555">
+                        <input type="text" name="phone" id="phone" placeholder="555-555-5555">
                     </p>
                     <p class="full">
                         <label for="message">Message</label>
-                        <textarea name="message" rows="5" placeholder="If you'd like to send me some info about the skills you're looking for, please enter it here!"></textarea>
+                        <textarea name="message" id="message" rows="5" placeholder="If you'd like to send me some info about the skills you're looking for, please enter it here!"></textarea>
                     </p>
                     <p class="full">
                         <button>Submit</button>
