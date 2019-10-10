@@ -41,15 +41,15 @@ body {
 	padding: 0;
 	font-size: 1.25rem;
 	font-family: 'Helios_Rounded';
-	 font-weight: normal;
-    font-style: normal;
+	font-weight: normal;
+  font-style: normal;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
-h3 {
+h2 {
 	font-size: 2em;
 }
 
@@ -153,24 +153,17 @@ h3 {
 	height: 100%;
 	margin-top: 150px;
 	font-size: 1.8rem;
-	font-family: 'Helios_Rounded';
 }
 
-.main-header div {
+.main-header h1 {
 	width: 100%;
-	text-align: center;
+	font-size: 1em;
 	text-shadow: 1.5px 1.5px 1.5px black;
+	margin: 0px;
 }
 
-.main-header div strong {
-	width: 100%;
-	text-align: center;
-	font-size: 2.5rem;
-}
-
-.main-header h6 {
-	width: 100%;
-	text-align: center;
+.main-header h1 strong {
+	font-size: 2.75rem;
 }
 
 /*About this page*/
@@ -232,7 +225,7 @@ h3 {
 	width: 100%;
 }
 
-.portfolio h3 {
+.portfolio h2 {
 	width: 100%;
 }
 
@@ -392,7 +385,7 @@ h3 {
 	text-shadow: 1px 1px 1px black;
 }
 
-.services h3 {
+.services h2 {
 	position: absolute;
 	margin-bottom: 0px;
 	margin-top: 50px;
@@ -439,7 +432,7 @@ h3 {
 	margin-right: 4%;
 }
 
-.goals h3 {
+.goals h2 {
 	text-align: center;
 }
 
@@ -486,7 +479,7 @@ li h5 {
 	    grid-template-rows: 1fr;
 }
 
-.hobbies h3 {
+.hobbies h2 {
 	text-align: center;
 }
 
@@ -499,7 +492,7 @@ li h5 {
 	    grid-template-columns: 1fr;
 }
 
-.hardSkills h3 {
+.hardSkills h2 {
 	text-align: center;
 	margin-right: 40px;
 	margin-left: 40px;
