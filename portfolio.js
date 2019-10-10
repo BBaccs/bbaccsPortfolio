@@ -110,21 +110,21 @@ btnShowAll.addEventListener('click', function () {
         }, 4000);
     }
     showAllPortfolioItems();
-})
+});
 
 btnTemplate.addEventListener('click', function () {
     showAllPortfolioItems();
     for(i = 0; i < templateSite.length; i++){
         templateSite[i].classList.add('hide');
     }
-})
+});
 
 btnJavaApp.addEventListener('click', function () {
     showAllPortfolioItems();
     for(i = 0; i < javascriptApp.length; i++){
         javascriptApp[i].classList.add('hide');
     }
-})
+});
 
 
 btnRaw.addEventListener('click', function () {
@@ -132,7 +132,7 @@ btnRaw.addEventListener('click', function () {
     for(i = 0; i < rawCssSite.length; i++){
         rawCssSite[i].classList.add('hide');
     }
-})
+});
 
 btnReact.addEventListener('click', function (){
     //create div
