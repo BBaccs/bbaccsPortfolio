@@ -247,7 +247,7 @@ h2 {
 	margin-right: 8%;
 }
 
-.portfolioItem h6 {
+.portfolioItem h3 {
 	text-align: center;
 }
 
@@ -337,7 +337,7 @@ h2 {
 	left: 0;
 }
 
-#portfolio-images li h6 {
+#portfolio-images li h3 {
 	margin: 0;
     top: 50%;
     left: 50%;
@@ -357,7 +357,7 @@ h2 {
     width: 100%;
 }
 
-#portfolio-images li:hover h6 {
+#portfolio-images li:hover h3 {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
