@@ -210,7 +210,7 @@ h2 {
 	bottom: 7.5px;
 }
 
-.prommaing-language-link:hover:before {
+.programming-language-link:hover:before {
 	visibility: none;
 	-webkit-transform: scaleX(0);
 	-ms-transform: scaleX(0);
@@ -279,9 +279,7 @@ button#btnAll {
 	padding-left: 2.25rem;
 	padding-right: 2.25rem;
 	margin-top: 1em;
-}
-.btn-wrapper {
-	width: 100%;
+	width: 30%;
 }
 
 #btnAll:hover {
