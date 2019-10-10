@@ -273,7 +273,7 @@ h2 {
   font-weight: 700;
 	font-size: 1rem;
 	transition: .4s;
-  padding: 1.35rem 2rem;
+  padding: 1.3rem 2rem;
   border-radius: 18px;
 	max-width: 30rem;
 	padding-left: 2.25rem;
@@ -463,11 +463,6 @@ img.language-logo-width {
 
 .goalMiniBox {
 	display: none;
-}
-
-li h5 {
-	margin-top: 5px;
-	font-size: 1.25em;
 }
 
 .goalMiniBoxes {
