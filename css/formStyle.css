@@ -1,5 +1,3 @@
-
-
 section#container-contact {
     color: black;
     line-height: 1.4;
@@ -12,13 +10,13 @@ section#container-contact {
     font-size: 16px;
 }
 
-section#container-contact > h3{
+section#container-contact > h2{
     text-align: center;
     font-size: 2em;
     color: black;
 }
 
-.contact > h4, .contact-info > h4  {
+.contact h3 {
     font-size: 1.3em; 
 }
 
@@ -35,7 +33,8 @@ div.contact-info {
     color: white;
 }
 
-div.contact-info h4, .contact-info li {
+div.contact-info h4,
+.contact-info li {
     text-align: left;
     margin: 0 0 1rem 0;
 }
@@ -63,11 +62,14 @@ div.contact-info h4, .contact-info li {
     grid-column: 1 / 3;
 }
 
-.contact form button, .contact form input, .contact form textarea {
+.contact form button,
+.contact form input,
+.contact form textarea {
     width: 100%;
 }
 
-.contact form button, .contact form input {
+.contact form button,
+.contact form input {
     padding: 1em;
 }
 
@@ -78,7 +80,8 @@ div.contact-info h4, .contact-info li {
     text-transform: uppercase;
 }
 
-.contact form button:hover, .contact form button:focus {
+.contact form button:hover,
+.contact form button:focus {
     background: black;
     outline: 0;
     transition: background-color 2s ease-out;
@@ -94,7 +97,9 @@ div.contact-info h4, .contact-info li {
     .wrapper > * {
         padding: 2em;
     }
-    #container-contact > h4, .contact-info > ul, .contact-info > h3  {
+    #container-contact > h4,
+    .contact-info > ul,
+    .contact-info > h3  {
         text-align: left;
     } 
 }
