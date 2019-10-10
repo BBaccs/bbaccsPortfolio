@@ -7,6 +7,13 @@ a {
 	text-transform: uppercase;
 }
 
+button {
+	cursor: pointer;
+	background-color: inherit;
+	padding: 0px;
+  border-style: none;
+}
+
 /* Start Resume link */
 /* #resume-link {
 	text-transform: none;
@@ -277,6 +284,14 @@ h2 {
 .button:hover {
 	border-color: #3490dc;
 	color: #3490dc;
+}
+
+img.language-logo-width {
+	width: 100px;
+}
+.img-position {
+	margin-left: -50px;
+	width: 185px;
 }
 
 /*Portfolio Animations*/
