@@ -279,7 +279,9 @@ button#btnAll {
 	padding-left: 2.25rem;
 	padding-right: 2.25rem;
 	margin-top: 1em;
-	width: 30%;
+}
+.btn-wrapper {
+	width: 100%;
 }
 
 #btnAll:hover {
@@ -718,11 +720,6 @@ img.language-logo-width {
 			#portfolio-images {
 				-ms-grid-columns: 1fr;
 				    grid-template-columns: 1fr;
-			}
-		}
-		@media (max-width: 2500px){
-			#btnAll {
-				width: 100%;
 			}
 		}
 
