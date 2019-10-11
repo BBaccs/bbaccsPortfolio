@@ -282,6 +282,10 @@ button#btnAll {
 	width: 30%;
 }
 
+.btnWrapper {
+	width: 100%;
+}
+
 #btnAll:hover {
 	border-color: #3490dc;
 	color: #3490dc;
