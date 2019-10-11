@@ -279,10 +279,9 @@ button#btnAll {
 	padding-left: 2.25rem;
 	padding-right: 2.25rem;
 	margin-top: 1em;
-	width: 30%;
 }
 
-.btnWrapper {
+.btn-wrapper {
 	width: 100%;
 }
 
