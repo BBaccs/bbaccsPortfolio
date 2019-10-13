@@ -88,10 +88,6 @@ h2 {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 125, from(#000), to(#fff));
 }
 
-.float-up {
-	z-index: 1200;
-}
-
 /*Main Page*/
 
 .main-picture {
@@ -297,9 +293,8 @@ button#btnAll {
 img.language-logo-width {
 	width: 100px;
 }
-.img-position {
-	margin-left: -50px;
-	width: 185px;
+.mg-left-50 {
+	margin-left: 50px;
 }
 
 #shorten-hr {
