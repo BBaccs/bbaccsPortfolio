@@ -88,6 +88,10 @@ h2 {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 125, from(#000), to(#fff));
 }
 
+.float-up {
+	z-index: 2;
+}
+
 /*Main Page*/
 
 .main-picture {
@@ -254,7 +258,7 @@ h2 {
 	margin-right: 8%;
 }
 
-.portfolioItem h3 {
+.portfolioItem p {
 	text-align: center;
 }
 
@@ -356,7 +360,7 @@ img.language-logo-width {
 	left: 0;
 }
 
-#portfolio-images li h3 {
+#portfolio-images li p {
 	margin: 0;
     top: 50%;
     left: 50%;
@@ -376,7 +380,7 @@ img.language-logo-width {
     width: 100%;
 }
 
-#portfolio-images li:hover h3 {
+#portfolio-images li:hover p {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
