@@ -302,6 +302,10 @@ img.language-logo-width {
 	width: 185px;
 }
 
+#shorten-hr {
+	width: 8.5%;
+}
+
 /*Portfolio Animations*/
 
 #portfolio-images li {
