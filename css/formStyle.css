@@ -10,6 +10,16 @@ section#container-contact {
     font-size: 16px;
 }
 
+section#container-contact > h2{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+.contact h3 {
+    font-size: 1.3em; 
+}
+
 .wrapper {
     box-shadow: 0 0 10px rgba(72,94,116,0.7);
 }
