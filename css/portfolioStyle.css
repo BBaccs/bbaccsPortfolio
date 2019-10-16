@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
-h2 {
+h1 {
 	font-size: 2em;
 }
 
@@ -236,7 +236,7 @@ h2 {
 	width: 100%;
 }
 
-.portfolio h2 {
+.portfolio h1 {
 	width: 100%;
 }
 
@@ -412,7 +412,7 @@ img.language-logo-width {
 	text-shadow: 1px 1px 1px black;
 }
 
-.services h2 {
+.services h1 {
 	position: absolute;
 	margin-bottom: 0px;
 	margin-top: 50px;
@@ -459,7 +459,7 @@ img.language-logo-width {
 	margin-right: 4%;
 }
 
-.goals h2 {
+.goals h1 {
 	text-align: center;
 }
 
@@ -510,7 +510,7 @@ img.language-logo-width {
 	    grid-template-columns: 1fr;
 }
 
-.hardSkills h2 {
+.hardSkills h1 {
 	text-align: center;
 	margin-right: 40px;
 	margin-left: 40px;
