@@ -556,7 +556,7 @@ img.language-logo-width {
 	color: white;
 }
 
-.footer div:nth-child(1) {
+.footer p {
 	margin-left: 20px;
 }
 
@@ -757,7 +757,7 @@ img.language-logo-width {
 /*	footer MEDIA*/
 
 @media (max-width: 1200px){
-	.footer div {
+	.footer p {
 	font-size: .75em;
 	}
 }
@@ -794,7 +794,7 @@ img.language-logo-width {
 			margin-right: 0px;
 			position: inherit;
 		}
-		.footer div {
+		.footer > p {
 			margin-left: 0px !important;
 		}
 	}
