@@ -730,6 +730,7 @@ img.language-logo-width {
 /*services MEDIA*/
 @media (max-width: 800px){
 	.services {
+		min-height: 1150px;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
 	}
