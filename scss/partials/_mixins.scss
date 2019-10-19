@@ -1,0 +1,11 @@
+@mixin animation-slider() {
+  .span1 {
+    @content;
+  }
+  .span2 {
+    @content;
+  }
+  .span3 {
+    @content;
+  }
+}
