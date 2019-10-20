@@ -9,14 +9,17 @@
   // If bg color is darker
   @if(lightness($color) < 50) {
     @return $primary-font-color;
+    //@return $primary-border-color;
   }
   // If bg color is lighter
   @else { 
     @return $secondary-font-color;
+    //@return $secondary-border-color;
   }
 }
 
 @mixin set-background($color) {
   background-color: $color;
   color: set-text-color($color);
+  //border: 1px solid set-text-color($color);
 }
