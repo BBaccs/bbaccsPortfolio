@@ -127,7 +127,7 @@ h2 {
         flex-wrap: nowrap;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    @include display-flex();;
 }
 
 .main-navbar li {
@@ -146,7 +146,7 @@ h2 {
 .title {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	@include display-flex();;
 	@include align-items(end);
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -195,7 +195,7 @@ h2 {
 
 /*Promamming Languages Logos*/
 .programming-language-container {
-	display: flex;
+	@include display-flex();;
 	flex-wrap: inherit;
 	justify-content: center;
 	width: 100%;
@@ -218,7 +218,7 @@ h2 {
 	text-align: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	@include display-flex();;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	padding-bottom: 50px;
@@ -379,7 +379,7 @@ img.language-logo-width {
 .services {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	@include display-flex();;
 	background-image: url(../img/services-code.jpg);
 	position: relative;
 	min-height: 450px;
@@ -586,11 +586,9 @@ div.contact-info h4,
 .footer {
 	height: 15vh;
 	margin-top: 50px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	text-align: center;
+	@include display-flex();
 	@include align-items(center);
+	text-align: center;
 	position: relative;
 }
 
@@ -602,13 +600,11 @@ div.contact-info h4,
 	position: absolute;
 	right: 0%;
 	margin-right: 50px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	@include display-flex();
 }
 
 .socialMediaContainer ul {
-	display: flex;
+	@include display-flex();
 }
 
 .socialMediaContainer li {
@@ -673,7 +669,7 @@ div.contact-info h4,
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	display: flex;
+	@include display-flex();;
 	justify-content: center;
 	margin-top: 10px;
 	padding: 1em;
@@ -710,7 +706,7 @@ div.contact-info h4,
 		.main-picture {
 			display: -webkit-box;
 			display: -ms-flexbox;
-			display: flex;
+			@include display-flex();;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			padding-bottom: 75px;
@@ -721,7 +717,7 @@ div.contact-info h4,
 		.main-navbar {
 			display: -webkit-box;
 			display: -ms-flexbox;
-			display: flex;
+			@include display-flex();;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			@include align-items(center);
@@ -730,7 +726,7 @@ div.contact-info h4,
 			width: 100%;
 			    display: -webkit-box;
 			    display: -ms-flexbox;
-			    display: flex;
+			    @include display-flex();;
     			-ms-flex-wrap: wrap;
     			    flex-wrap: wrap;
 		}
@@ -807,7 +803,7 @@ div.contact-info h4,
 		.footer {
 			display: -webkit-box;
 			display: -ms-flexbox;
-			display: flex;
+			@include display-flex();;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			@include align-items(center);
