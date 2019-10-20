@@ -1,7 +1,21 @@
+// Mixins
 @mixin animation-slider() {
   .span1, .span2, .span3 {
     @content;
   }
+}
+
+@mixin justify-content-center() {
+  .services, .main-picture, .footer p, .main-navbar ul, .title, .portfolio {
+    @content;
+  }
+}
+
+// Alternative way to structure mixins, testing to see what is best for needs
+@mixin align-items($property) {
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 // Set text color bases on bg

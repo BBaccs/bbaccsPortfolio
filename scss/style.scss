@@ -128,9 +128,6 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
 }
 
 .main-navbar li {
@@ -154,9 +151,6 @@ h2 {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	        align-items: flex-end;
@@ -227,9 +221,6 @@ h2 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	padding-bottom: 50px;
@@ -311,8 +302,14 @@ img.language-logo-width {
 	cursor: pointer;
 	position: relative;
 }
+
+@include justify-content-center() {
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+}
  
-@include animation-slider(){
+@include animation-slider() {
 	position: absolute;
 	width: 0%;
 	height: 33.3%;
@@ -393,14 +390,9 @@ img.language-logo-width {
 	display: flex;
 	background-image: url(../img/services-code.jpg);
 	position: relative;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
 	min-height: 450px;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
 	text-shadow: 1px 1px 1px $secondary-font-color;
+	@include align-items(center);
 }
 
 .services h2 {
@@ -729,9 +721,6 @@ div.contact-info h4,
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			padding-bottom: 75px;
@@ -831,9 +820,6 @@ div.contact-info h4,
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			-webkit-box-align: center;
