@@ -4,8 +4,12 @@
 // mixins
 @import 'partials/mixins';
 
+// utilities
+@import 'partials/utilities';
+
 
 //Portfolio
+
 a {
 	text-align: center;
 	cursor: pointer;
@@ -388,6 +392,7 @@ img.language-logo-width {
 }
 
 /*services*/
+
 .services {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -735,18 +740,20 @@ div.contact-info h4,
 }
 
 /*use display list item for their current class portfolio item*/
+
 .hide {
 	display: none;
 }
 
 /*MEDIA QUERIES*/
-
 	/*header Media for Mobile Landscape*/
+
 	@media (max-width: 900px) and (max-height: 415px){
 	.title {
 			margin-top: 10px;
 		}	
 	}
+
 	/*nav MEDIA*/
 
 	@media (max-width: 500px){
@@ -803,6 +810,7 @@ div.contact-info h4,
 		}
 
 /*services MEDIA*/
+
 @media (max-width: 800px){
 	.services {
 		min-height: 1150px;
@@ -876,6 +884,7 @@ div.contact-info h4,
   }
 
 /* Contact form */
+
 @media(min-width:700px) {
   .wrapper {
       display: grid;

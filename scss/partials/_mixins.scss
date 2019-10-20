@@ -1,11 +1,23 @@
 @mixin animation-slider() {
-  .span1 {
+  .span1, .span2, .span3 {
     @content;
   }
-  .span2 {
-    @content;
+}
+
+// Set text color bases on bg
+@function set-text-color($color) {
+  @if(lightness($color) < 50) {
+    // Currently $white
+    @return $primary-font-color;
   }
-  .span3 {
-    @content;
+  @else {
+     // Currently $black
+    @return $secondary-font-color;
   }
+}
+
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
 }

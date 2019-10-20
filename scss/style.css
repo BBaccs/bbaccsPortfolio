@@ -1,3 +1,13 @@
+.bg-color-primary {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.bg-color-secondary {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
 a {
   text-align: center;
   cursor: pointer;
@@ -307,29 +317,7 @@ img.language-logo-width {
   position: relative;
 }
 
-.span1 {
-  position: absolute;
-  width: 0%;
-  height: 33.3%;
-  -webkit-transition-duration: 2s;
-  transition-duration: 2s;
-  -webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.span2 {
-  position: absolute;
-  width: 0%;
-  height: 33.3%;
-  -webkit-transition-duration: 2s;
-  transition-duration: 2s;
-  -webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.span3 {
+.span1, .span2, .span3 {
   position: absolute;
   width: 0%;
   height: 33.3%;
