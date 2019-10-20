@@ -5,17 +5,24 @@
   }
 }
 
-@mixin justify-content-center() {
-  .services, .main-picture, .footer p, .main-navbar ul, .title, .portfolio {
-    @content;
-  }
-}
+// @mixin justify-content-center() {
+//   .services, .main-picture, .footer p, .main-navbar ul, .title, .portfolio {
+//     @content;
+//   }
+// }
 
 // Alternative way to structure mixins, testing to see what is best for needs
-@mixin align-items($property) {
-	-webkit-box-align: $property;
-    -ms-flex-align: $property;
-    align-items: $property;
+@mixin align-items-justify-cont($align-items, $justify-content) {
+
+  // Align items
+	-webkit-box-align: $align-items;
+    -ms-flex-align: $align-items;
+    align-items: $align-items;
+
+    //J ustify content
+    -webkit-box-pack: $justify-content;
+		-ms-flex-pack: $justify-content;
+		justify-content: $justify-content;
 }
 
 @mixin transition-duration($property) {

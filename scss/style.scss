@@ -124,9 +124,7 @@ h2 {
 	    flex-basis: 100%;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    @include display-flex();;
+    @include display-flex();
 }
 
 .main-navbar li {
@@ -143,10 +141,8 @@ h2 {
 /*main page content*/
 
 .title {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	@include display-flex();;
-	@include align-items(end);
+	@include display-flex();
+	@include align-items-justify-cont(end, center);
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
@@ -194,9 +190,9 @@ h2 {
 
 /*Promamming Languages Logos*/
 .programming-language-container {
-	@include display-flex();;
+	@include display-flex();
+	@include align-items-justify-cont(unset, center);
 	flex-wrap: inherit;
-	justify-content: center;
 	width: 100%;
 }
 
@@ -215,9 +211,7 @@ h2 {
 
 .portfolio {
 	text-align: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	@include display-flex();;
+	@include display-flex();
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	padding-bottom: 50px;
@@ -298,12 +292,6 @@ img.language-logo-width {
 	cursor: pointer;
 	position: relative;
 }
-
-@include justify-content-center() {
-	-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-}
  
 @include animation-slider() {
 	position: absolute;
@@ -375,14 +363,12 @@ img.language-logo-width {
 /*services*/
 
 .services {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	@include display-flex();;
+	@include display-flex();
+	text-shadow: 1px 1px 1px $secondary-font-color;
+	@include align-items-justify-cont(center, unset);
 	background-image: url(../img/services-code.jpg);
 	position: relative;
 	min-height: 450px;
-	text-shadow: 1px 1px 1px $secondary-font-color;
-	@include align-items(center);
 }
 
 .services h2 {
@@ -409,7 +395,7 @@ img.language-logo-width {
 
 .services li {
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 	min-height: 300px;
 	max-height: 300px;
 	margin-top: 125px;
@@ -582,7 +568,7 @@ div.contact-info h4,
 	height: 15vh;
 	margin-top: 50px;
 	@include display-flex();
-	@include align-items(center);
+	@include align-items-justify-cont(center, unset);
 	text-align: center;
 	position: relative;
 }
@@ -664,8 +650,8 @@ div.contact-info h4,
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	@include display-flex();;
-	justify-content: center;
+	@include display-flex();
+	@include align-items-justify-cont(unset, center);
 	margin-top: 10px;
 	padding: 1em;
 	font-size: 1.25em;
@@ -699,9 +685,7 @@ div.contact-info h4,
 
 	@media (max-width: 500px){
 		.main-picture {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			@include display-flex();;
+			@include display-flex();
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			padding-bottom: 75px;
@@ -710,18 +694,14 @@ div.contact-info h4,
 			margin-top: 0px;
 		}
 		.main-navbar {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			@include display-flex();;
+			@include display-flex();
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
-			@include align-items(center);
+			@include align-items-justify-cont(center, center);
 		}
 		.main-navbar ul {
 			width: 100%;
-			    display: -webkit-box;
-			    display: -ms-flexbox;
-			    @include display-flex();;
+			    @include display-flex();
     			-ms-flex-wrap: wrap;
     			    flex-wrap: wrap;
 		}
@@ -796,12 +776,10 @@ div.contact-info h4,
 
 	@media (max-width: 800px){
 		.footer {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			@include display-flex();;
+			@include display-flex();
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
-			@include align-items(center);
+			@include align-items-justify-cont(center, unset);
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}

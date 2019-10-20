@@ -130,8 +130,6 @@ hr {
   flex-wrap: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -150,12 +148,13 @@ hr {
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -205,11 +204,14 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: inherit;
       flex-wrap: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
 }
 
@@ -227,8 +229,6 @@ hr {
 
 .portfolio {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,12 +315,6 @@ img.language-logo-width {
   position: relative;
 }
 
-.services, .main-picture, .footer p, .main-navbar ul, .title, .portfolio {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .span1, .span2, .span3 {
   position: absolute;
   width: 0%;
@@ -392,16 +386,17 @@ img.language-logo-width {
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  background-image: url(../img/services-code.jpg);
-  position: relative;
-  min-height: 450px;
   text-shadow: 1px 1px 1px #000000;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+  background-image: url(../img/services-code.jpg);
+  position: relative;
+  min-height: 450px;
 }
 
 .services h2 {
@@ -610,6 +605,9 @@ div.contact-info h4,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
   text-align: center;
   position: relative;
 }
@@ -693,9 +691,12 @@ div.contact-info h4,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 10px;
   padding: 1em;
   font-size: 1.25em;
@@ -729,8 +730,6 @@ div.contact-info h4,
   .main-picture {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -742,19 +741,18 @@ div.contact-info h4,
   .main-navbar {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .main-navbar ul {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -831,14 +829,15 @@ div.contact-info h4,
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
     padding-top: 30px;
     padding-bottom: 30px;
   }
