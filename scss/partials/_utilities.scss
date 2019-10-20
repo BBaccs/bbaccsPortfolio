@@ -6,7 +6,4 @@
   &-secondary{ 
     @include set-background($secondary-bg-color);
   }
-  &-tertiary{ 
-    @include set-background($secondary-bg-color);
-  }
 }

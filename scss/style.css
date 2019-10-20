@@ -3,14 +3,17 @@
   color: #ffffff;
 }
 
+.bg-color-primary li a {
+  color: #000000;
+}
+
 .bg-color-secondary {
   background-color: #f9f9f9;
   color: #000000;
 }
 
-.bg-color-tertiary {
-  background-color: #f9f9f9;
-  color: #000000;
+.bg-color-secondary li a {
+  color: #ffffff;
 }
 
 a {
@@ -532,7 +535,6 @@ section#container-contact {
 section#container-contact > h2 {
   text-align: center;
   font-size: 2em;
-  color: #000000;
 }
 
 .contact h3 {
@@ -594,8 +596,6 @@ div.contact-info h4,
 }
 
 .contact form button {
-  background: #444444;
-  color: #ffffff;
   border: 0;
   text-transform: uppercase;
 }
@@ -657,14 +657,6 @@ div.contact-info h4,
   bottom: 5px;
   -webkit-box-shadow: 0 1.8vw 4vw -0.7vw #000000;
   box-shadow: 0 1.8vw 4vw -0.7vw #000000;
-}
-
-.footer a {
-  color: #ffffff;
-}
-
-.socialMediaLink {
-  color: #ffffff;
 }
 
 .socialMediaLink:hover:before {
@@ -861,8 +853,8 @@ div.contact-info h4,
     margin-right: 0px;
     position: inherit;
   }
-  .footer > p {
-    margin-left: 0px !important;
+  footer.footer > p {
+    margin-left: 0px;
   }
 }
 

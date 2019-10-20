@@ -48,6 +48,7 @@ li {
 ul {
 	padding-left:  0px;
 }
+
 html {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -537,10 +538,9 @@ img.language-logo-width {
     font-size: 16px;
 }
 
-section#container-contact > h2{
+section#container-contact > h2 {
     text-align: center;
     font-size: 2em;
-    color: $secondary-font-color;
 }
 
 .contact h3 {
@@ -596,8 +596,6 @@ div.contact-info h4,
 }
 
 .contact form button {
-    background: $primary-bg-color;
-    color: $primary-font-color;
     border: 0;
     text-transform: uppercase;
 }
@@ -659,14 +657,6 @@ div.contact-info h4,
 	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw $tertiary-bg-color;
 	        box-shadow: 0 1.8vw 4vw -0.7vw $tertiary-bg-color;
 	}
-
-.footer a {
-	color: $primary-font-color;
-}
-
-.socialMediaLink {
-	color: $primary-font-color;
-}
 
 .socialMediaLink:hover:before {
 	visibility: none;
@@ -867,8 +857,8 @@ div.contact-info h4,
 			margin-right: 0px;
 			position: inherit;
 		}
-		.footer > p {
-			margin-left: 0px !important;
+		footer.footer > p {
+			margin-left: 0px;
 		}
   }
 
