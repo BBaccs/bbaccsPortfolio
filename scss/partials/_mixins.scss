@@ -41,6 +41,11 @@
       transform: translate($percentage);
 }
 
+@mixin box-shadow($vw1, $vw2, $vw3, $v4, $color) {
+  -webkit-box-shadow: $vw1 $vw2 $vw3 $v4 $color;
+  box-shadow: $vw1 $vw2 $vw3 $v4 $color; 
+}
+
 @mixin transform($property-number) {
 	-webkit-transform: $property-number;
 	-ms-transform: $property-number;

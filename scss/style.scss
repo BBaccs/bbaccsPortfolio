@@ -78,9 +78,8 @@ h2 {
 }
 
 .enhanceImg {
+	@include box-shadow(0, 1.8vw, 4vw, -0.7vw, $primary-shadow-color);
 	border: 1px solid $primary-border-color;
-    -webkit-box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
-            box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
   width: 100%;
 	height: 100%;
 	max-width: 475px;
@@ -281,11 +280,10 @@ img.language-logo-width {
  
 @include animation-slider() {
 	@include transition-duration(2s);
+	@include box-shadow(0, 1.8vw, 4vw, -0.7vw, $primary-shadow-color);
 	position: absolute;
 	width: 0%;
 	height: 33.3%;
-	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
-	        box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
 	z-index: 1;
 }
 
@@ -417,13 +415,12 @@ img.language-logo-width {
 }
 
 .goalMiniBoxes {
-    padding: 40px;
-    padding-bottom: 75px;
-   	border: 1px solid $primary-border-color;
-    -webkit-box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
-            box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
-    min-height: 425px;
-    border-radius: 40px;
+	@include box-shadow(0, 1.8vw, 4vw, -0.7vw, $primary-shadow-color);
+	padding: 40px;
+	padding-bottom: 75px;
+	border: 1px solid $primary-border-color;
+	min-height: 425px;
+	border-radius: 40px;
 }
 
 .goal-item {
@@ -481,7 +478,7 @@ section#container-contact > h2 {
 }
 
 .wrapper {
-    box-shadow: 0 0 10px rgba(72,94,116,0.7);
+	@include box-shadow(0, 0, 10px, 0, $tertiary-bg-color);
 }
 
 .wrapper > * {
@@ -576,11 +573,11 @@ div.contact-info h4,
 }
 
 .socialMediaContainer li:hover {
+	@include box-shadow(0, 1.8vw, 4vw, -0.7vw, $tertiary-bg-color);
 	background-color: $tertiary-bg-color;
 	position: relative;
 	bottom: 5px;
-	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw $tertiary-bg-color;
-	        box-shadow: 0 1.8vw 4vw -0.7vw $tertiary-bg-color;
+
 	}
 
 .socialMediaLink:hover:before {
@@ -670,9 +667,9 @@ div.contact-info h4,
 		}
 		.main-navbar ul {
 			width: 100%;
-					@include display-flex();
-					@include align-items-justify-cont(center, center);
-					@include flex-wrap(wrap);
+			@include display-flex();
+			@include align-items-justify-cont(center, center);
+			@include flex-wrap(wrap);
 		}
 		.main-navbar li {
 			width: 100%;
