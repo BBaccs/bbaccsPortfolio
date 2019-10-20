@@ -198,10 +198,8 @@ h2 {
 }
 
 .programming-language-link:hover:before {
+	@include transform(scaleX(0));
 	visibility: none;
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	    transform: scaleX(0);
 }
 
 .portfolio {
@@ -311,7 +309,6 @@ img.language-logo-width {
 .span3 {
 	top: 66.3%;
 }
-
 
 #portfolio-images li:hover .span1,
 #portfolio-images li:hover .span3 {
@@ -436,13 +433,6 @@ img.language-logo-width {
 	list-style-type: circle; 
 	text-align: start;
 }
-
-/*Hobbies*/
-// .hobbies {
-// 	@include display-grid();
-// 	-ms-grid-rows: 1fr;
-// 	    grid-template-rows: 1fr;
-// }
 
 /*Hard Skills*/
 
@@ -581,11 +571,9 @@ div.contact-info h4,
 }
 
 .socialMediaContainer li {
+	@include transform(rotate(30deg));
 	border: 1px solid $secondary-border-color;
 	padding: 7.5px;
-	-webkit-transform: rotate(30deg);
-	    -ms-transform: rotate(30deg);
-	        transform: rotate(30deg);
 	margin-left: 30px;
 	width: 20px;
 }
@@ -599,10 +587,8 @@ div.contact-info h4,
 	}
 
 .socialMediaLink:hover:before {
+	@include transform(scaleX(0));
 	visibility: none;
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	    transform: scaleX(0);
 }
 
 .rotate30 {
@@ -610,13 +596,12 @@ div.contact-info h4,
 }
 
 .linkAnimation:hover:before {
+	@include transform(scaleX(1));
 	visibility: visible;
-	-webkit-transform: scaleX(1);
-	-ms-transform: scaleX(1);
-	    transform: scaleX(1);
 }
 
 .linkAnimation:before {
+	@include transform(scaleX(1));
 	visibility: hidden;
 	content: "";
 	position: absolute;
@@ -625,9 +610,6 @@ div.contact-info h4,
 	background-color: $quaternary-bg-color;
 	bottom: 0;
 	left: 0;
-		 -webkit-transform: scaleX(0);
-  		-ms-transform: scaleX(0);
-		     transform: scaleX(0);
   		-webkit-transition: all 0.3s ease-in-out 0s;
   		-o-transition: all 0.3s ease-in-out 0s;
   		transition: all 0.3s ease-in-out 0s;

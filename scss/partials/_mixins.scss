@@ -36,12 +36,21 @@
       transform: translate($percentage);
 }
 
+@mixin transform($property-number) {
+	-webkit-transform: $property-number;
+	-ms-transform: $property-number;
+	    transform: $property-number;
+}
+
+
+
 // Alternative way to structure mixins, testing to see what is best for needs
 @mixin animation-slider() {
   .span1, .span2, .span3 {
     @content;
   }
 }
+
 
 // ****Functions****
 

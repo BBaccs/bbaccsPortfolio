@@ -221,9 +221,9 @@ hr {
 }
 
 .programming-language-link:hover:before {
-  visibility: none;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+  visibility: none;
 }
 
 .portfolio {
@@ -471,7 +471,6 @@ img.language-logo-width {
   text-align: start;
 }
 
-/*Hobbies*/
 /*Hard Skills*/
 .hardSkills {
   display: -ms-grid;
@@ -633,10 +632,10 @@ div.contact-info h4,
 }
 
 .socialMediaContainer li {
-  border: 1px solid #ffffff;
-  padding: 7.5px;
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
+  border: 1px solid #ffffff;
+  padding: 7.5px;
   margin-left: 30px;
   width: 20px;
 }
@@ -650,9 +649,9 @@ div.contact-info h4,
 }
 
 .socialMediaLink:hover:before {
-  visibility: none;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+  visibility: none;
 }
 
 .rotate30 {
@@ -661,12 +660,14 @@ div.contact-info h4,
 }
 
 .linkAnimation:hover:before {
-  visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  visibility: visible;
 }
 
 .linkAnimation:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
   visibility: hidden;
   content: "";
   position: absolute;
@@ -675,8 +676,6 @@ div.contact-info h4,
   background-color: #ffffff;
   bottom: 0;
   left: 0;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
