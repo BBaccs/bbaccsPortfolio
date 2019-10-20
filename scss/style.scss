@@ -13,7 +13,6 @@
 a {
 	text-align: center;
 	cursor: pointer;
-	color: $secondary-font-color;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -142,7 +141,6 @@ h2 {
 }
 
 .main-navbar a {
-	color: $primary-font-color;
 	font-size: .75em;
 }
 
@@ -164,7 +162,6 @@ h2 {
 	        align-items: flex-end;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap;
-	color: $primary-font-color;
 	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
@@ -395,7 +392,6 @@ img.language-logo-width {
 	display: -ms-flexbox;
 	display: flex;
 	background-image: url(../img/services-code.jpg);
-	color: $primary-font-color;
 	position: relative;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
@@ -511,12 +507,6 @@ img.language-logo-width {
 	margin-left: 40px;
 }
 
-.progressBar2 {
-	max-width: 92.5%; 
-	background-color: $tertiary-bg-color; 
-	height: 2px;
-}
-
 .progressBar2.progressBar3 {
 	max-width: 80%;
 }
@@ -527,7 +517,6 @@ img.language-logo-width {
 
   //contact form
   section#container-contact {
-    color: $secondary-font-color;
     line-height: 1.4;
     padding: 1em;
     max-width: 1170px;
