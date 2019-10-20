@@ -147,13 +147,11 @@ h2 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	@include align-items(end);
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-align: end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap;
 	width: 85%;
@@ -313,9 +311,7 @@ img.language-logo-width {
 	position: absolute;
 	width: 0%;
 	height: 33.3%;
-	-webkit-transition-duration: $animation-duration;
-	     -o-transition-duration: $animation-duration;
-	        transition-duration: $animation-duration;
+	@include transition-duration(2s);
 	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
 	        box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
 	z-index: 1;
@@ -362,9 +358,7 @@ img.language-logo-width {
         -ms-transform: translate(-50%);
             transform: translate(-50%);
     letter-spacing: 1px;
-    -webkit-transition-duration: $animation-duration;
-         -o-transition-duration: $animation-duration;
-            transition-duration: $animation-duration;
+		@include transition-duration(2s);
     color: $primary-font-color;
     font-size: 0;
     z-index: 1200;
@@ -376,9 +370,7 @@ img.language-logo-width {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
-    -webkit-transition-duration: $animation-duration;
-         -o-transition-duration: $animation-duration;
-            transition-duration: $animation-duration;
+		@include transition-duration(2s);
     font-size: 1em;
 }
 
@@ -598,9 +590,7 @@ div.contact-info h4,
 	display: -ms-flexbox;
 	display: flex;
 	text-align: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	@include align-items(center);
 	position: relative;
 }
 
@@ -734,9 +724,7 @@ div.contact-info h4,
 			display: flex;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			@include align-items(center);
 		}
 		.main-navbar ul {
 			width: 100%;
@@ -822,9 +810,7 @@ div.contact-info h4,
 			display: flex;
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			@include align-items(center);
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}
