@@ -6,16 +6,15 @@
 
 // Set text color bases on bg
 @function set-text-color($color) {
+  // If bg color is darker
   @if(lightness($color) < 50) {
-    // Currently $white
     @return $primary-font-color;
   }
-  @else {
-     // Currently $black
+  // If bg color is lighter
+  @else { 
     @return $secondary-font-color;
   }
 }
-
 
 @mixin set-background($color) {
   background-color: $color;

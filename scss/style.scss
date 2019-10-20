@@ -194,8 +194,6 @@ h2 {
 }
 
 .aboutContainer.aboutMe {
-	background-color: $primary-bg-color;
-	color: $primary-font-color;
 	text-shadow: 1px 1px 1px $secondary-font-color;
 	padding-top: 1px;
 	padding-bottom: 15px;
@@ -237,7 +235,6 @@ h2 {
 	        justify-content: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	background-color: $secondary-bg-color;
 	padding-bottom: 50px;
 	width: 100%;
 }
@@ -559,11 +556,6 @@ section#container-contact > h2{
     padding: 1em;
 }
 
-div.contact-info {
-    background-color: $primary-bg-color;
-    color: $primary-font-color;
-}
-
 div.contact-info h4,
 .contact-info li {
     text-align: left;
@@ -624,7 +616,6 @@ div.contact-info h4,
 .footer {
 	height: 15vh;
 	margin-top: 50px;
-	background-color: $primary-bg-color;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -633,7 +624,6 @@ div.contact-info h4,
 	    -ms-flex-align: center;
 	        align-items: center;
 	position: relative;
-	color: $primary-font-color;
 }
 
 .footer p {

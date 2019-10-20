@@ -8,6 +8,11 @@
   color: #000000;
 }
 
+.bg-color-tertiary {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
 a {
   text-align: center;
   cursor: pointer;
@@ -189,8 +194,6 @@ hr {
 }
 
 .aboutContainer.aboutMe {
-  background-color: #444444;
-  color: #ffffff;
   text-shadow: 1px 1px 1px #000000;
   padding-top: 1px;
   padding-bottom: 15px;
@@ -235,7 +238,6 @@ hr {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #f9f9f9;
   padding-bottom: 50px;
   width: 100%;
 }
@@ -547,11 +549,6 @@ section#container-contact > h2 {
   padding: 1em;
 }
 
-div.contact-info {
-  background-color: #444444;
-  color: #ffffff;
-}
-
 div.contact-info h4,
 .contact-info li {
   text-align: left;
@@ -617,7 +614,6 @@ div.contact-info h4,
 .footer {
   height: 15vh;
   margin-top: 50px;
-  background-color: #444444;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,7 +622,6 @@ div.contact-info h4,
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  color: #ffffff;
 }
 
 .footer p {
