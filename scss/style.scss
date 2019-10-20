@@ -1,10 +1,10 @@
-// variables
+// Variables
 @import 'partials/variables';
 
-// mixins
+// Mixins
 @import 'partials/mixins';
 
-// utilities
+// Utilities
 @import 'partials/utilities';
 
 
@@ -133,7 +133,7 @@ h2 {
 	font-size: .75em;
 }
 
-/*main page content*/
+/*Main page content*/
 
 .title {
 	@include display-flex();
@@ -180,10 +180,10 @@ h2 {
     transform: skewY(1deg);*/
     /*-webkit-clip-path: polygon(10% 1%, 100% 1%, 100% 96%, 7% 100%);*/
 }
-/*portfolio*/
 
-
+/*Portfolio*/
 /*Promamming Languages Logos*/
+
 .programming-language-container {
 	@include display-flex();
 	@include align-items-justify-cont(unset, center);
@@ -441,13 +441,12 @@ img.language-logo-width {
 	text-align: start;
 }
 
-/*hobbies*/
-
-.hobbies {
-	@include display-grid();
-	-ms-grid-rows: 1fr;
-	    grid-template-rows: 1fr;
-}
+/*Hobbies*/
+// .hobbies {
+// 	@include display-grid();
+// 	-ms-grid-rows: 1fr;
+// 	    grid-template-rows: 1fr;
+// }
 
 /*Hard Skills*/
 
@@ -477,7 +476,7 @@ img.language-logo-width {
 	margin-left: 40px;
 }
 
-  //contact form
+  // Contact form
   section#container-contact {
     line-height: 1.4;
     padding: 1em;
@@ -555,7 +554,7 @@ div.contact-info h4,
 .contact form button:focus {
     background: $tertiary-bg-color;
     outline: 0;
-    transition: background-color 2s ease-out;
+    transition: 2s ease-out;
     border: 1px solid $primary-bg-color;
 }
 
