@@ -181,7 +181,7 @@ h2 {
     /*-webkit-clip-path: polygon(10% 1%, 100% 1%, 100% 96%, 7% 100%);*/
 }
 
-/*Portfolio*/
+/*Portfolio*/ 
 /*Promamming Languages Logos*/
 
 .programming-language-container {
@@ -205,8 +205,8 @@ h2 {
 }
 
 .portfolio {
-	text-align: center;
 	@include display-flex();
+	text-align: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	padding-bottom: 50px;
@@ -285,10 +285,10 @@ img.language-logo-width {
 }
  
 @include animation-slider() {
+	@include transition-duration(2s);
 	position: absolute;
 	width: 0%;
 	height: 33.3%;
-	@include transition-duration(2s);
 	-webkit-box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
 	        box-shadow: 0 1.8vw 4vw -0.7vw $primary-shadow-color;
 	z-index: 1;
@@ -326,37 +326,33 @@ img.language-logo-width {
 }
 
 #portfolio-images li p {
+	@include transition-duration(2s);
+	@include translate(-50%);
 	margin: 0;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    text-transform: uppercase;
-    -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
-    letter-spacing: 1px;
-		@include transition-duration(2s);
-    color: $primary-font-color;
-    font-size: 0;
-    z-index: 2;
-    text-shadow: 1px 1px 1px $secondary-font-color;
-    width: 100%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $primary-font-color;
+	font-size: 0;
+	z-index: 2;
+	text-shadow: 1px 1px 1px $secondary-font-color;
+	width: 100%;
 }
 
 #portfolio-images li:hover p {
-    -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
-		@include transition-duration(2s);
-    font-size: 1em;
+	@include translate(-50%);
+	@include transition-duration(2s);
+	font-size: 1em;
 }
 
-/*services*/
+/*Services*/
 
 .services {
 	@include display-flex();
-	text-shadow: 1px 1px 1px $secondary-font-color;
 	@include align-items-justify-cont(center, unset);
+	text-shadow: 1px 1px 1px $secondary-font-color;
 	background-image: url(../img/services-code.jpg);
 	position: relative;
 	min-height: 450px;
@@ -457,9 +453,9 @@ img.language-logo-width {
 }
 
 .skills-hr {
-	position: absolute;
 	@include display-flex();
 	@include align-items-justify-cont(unset, center);
+	position: absolute;
 	width: 100%;
 	top: 10px;
 }
@@ -558,13 +554,13 @@ div.contact-info h4,
     border: 1px solid $primary-bg-color;
 }
 
-/*footer*/
+/*Footer*/
 
 .footer {
-	height: 15vh;
-	margin-top: 50px;
 	@include display-flex();
 	@include align-items-justify-cont(center, unset);
+	height: 15vh;
+	margin-top: 50px;
 	text-align: center;
 	position: relative;
 }
@@ -574,10 +570,10 @@ div.contact-info h4,
 }
 
 .socialMediaContainer {
+	@include display-flex();
 	position: absolute;
 	right: 0%;
 	margin-right: 50px;
-	@include display-flex();
 }
 
 .socialMediaContainer ul {
@@ -643,11 +639,11 @@ div.contact-info h4,
 .contactAlert,
 .showAllAlert,
 .showAllAlertFailed {
+	@include display-flex();
+	@include align-items-justify-cont(unset, center);
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	@include display-flex();
-	@include align-items-justify-cont(unset, center);
 	margin-top: 10px;
 	padding: 1em;
 	font-size: 1.25em;
@@ -677,7 +673,7 @@ div.contact-info h4,
 		}	
 	}
 
-	/*nav MEDIA*/
+	/*Nav MEDIA*/
 
 	@media (max-width: 500px){
 		.main-picture {
@@ -691,9 +687,9 @@ div.contact-info h4,
 		}
 		.main-navbar {
 			@include display-flex();
+			@include align-items-justify-cont(center, center);
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
-			@include align-items-justify-cont(center, center);
 		}
 		.main-navbar ul {
 			width: 100%;
@@ -707,7 +703,7 @@ div.contact-info h4,
 		}
 }
 
-		/*portfolio MEDIA*/
+		/*Portfolio MEDIA*/
 
 		@media (max-width: 800px){
 			#portfolio-images {
@@ -722,7 +718,7 @@ div.contact-info h4,
 			}
 		}
 
-/*services MEDIA*/
+/*Services MEDIA*/
 
 @media (max-width: 800px){
 	.services {
@@ -751,7 +747,7 @@ div.contact-info h4,
 }
 
 
-/*	footer MEDIA*/
+/*Footer Media*/
 
 @media (max-width: 1200px){
 	.footer p {
@@ -774,9 +770,9 @@ div.contact-info h4,
 	@media (max-width: 800px){
 		.footer {
 			@include display-flex();
+			@include align-items-justify-cont(center, unset);
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
-			@include align-items-justify-cont(center, unset);
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}

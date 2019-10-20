@@ -227,10 +227,10 @@ hr {
 }
 
 .portfolio {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-bottom: 50px;
@@ -311,11 +311,11 @@ img.language-logo-width {
 }
 
 .span1, .span2, .span3 {
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
   position: absolute;
   width: 0%;
   height: 33.3%;
-  -webkit-transition-duration: 2s;
-  transition-duration: 2s;
   -webkit-box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
   box-shadow: 0 1.8vw 4vw -0.7vw rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -352,16 +352,16 @@ img.language-logo-width {
 }
 
 #portfolio-images li p {
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
   margin: 0;
   top: 50%;
   left: 50%;
   position: absolute;
   text-transform: uppercase;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
   letter-spacing: 1px;
-  -webkit-transition-duration: 2s;
-  transition-duration: 2s;
   color: #ffffff;
   font-size: 0;
   z-index: 2;
@@ -377,18 +377,18 @@ img.language-logo-width {
   font-size: 1em;
 }
 
-/*services*/
+/*Services*/
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-shadow: 1px 1px 1px #000000;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: unset;
   -ms-flex-pack: unset;
   justify-content: unset;
+  text-shadow: 1px 1px 1px #000000;
   background-image: url(../img/services-code.jpg);
   position: relative;
   min-height: 450px;
@@ -481,7 +481,6 @@ img.language-logo-width {
 }
 
 .skills-hr {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +490,7 @@ img.language-logo-width {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: absolute;
   width: 100%;
   top: 10px;
 }
@@ -596,10 +596,8 @@ div.contact-info h4,
   border: 1px solid #444444;
 }
 
-/*footer*/
+/*Footer*/
 .footer {
-  height: 15vh;
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,6 +607,8 @@ div.contact-info h4,
   -webkit-box-pack: unset;
   -ms-flex-pack: unset;
   justify-content: unset;
+  height: 15vh;
+  margin-top: 50px;
   text-align: center;
   position: relative;
 }
@@ -618,12 +618,12 @@ div.contact-info h4,
 }
 
 .socialMediaContainer {
-  position: absolute;
-  right: 0%;
-  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  right: 0%;
+  margin-right: 50px;
 }
 
 .socialMediaContainer ul {
@@ -686,9 +686,6 @@ div.contact-info h4,
 .contactAlert,
 .showAllAlert,
 .showAllAlertFailed {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,6 +695,9 @@ div.contact-info h4,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   margin-top: 10px;
   padding: 1em;
   font-size: 1.25em;
@@ -726,7 +726,7 @@ div.contact-info h4,
   }
 }
 
-/*nav MEDIA*/
+/*Nav MEDIA*/
 @media (max-width: 500px) {
   .main-picture {
     display: -webkit-box;
@@ -743,14 +743,14 @@ div.contact-info h4,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .main-navbar ul {
     width: 100%;
@@ -771,7 +771,7 @@ div.contact-info h4,
   }
 }
 
-/*portfolio MEDIA*/
+/*Portfolio MEDIA*/
 @media (max-width: 800px) {
   #portfolio-images {
     -ms-grid-columns: 1fr 1fr;
@@ -786,7 +786,7 @@ div.contact-info h4,
   }
 }
 
-/*services MEDIA*/
+/*Services MEDIA*/
 @media (max-width: 800px) {
   .services {
     min-height: 1150px;
@@ -813,7 +813,7 @@ div.contact-info h4,
   }
 }
 
-/*	footer MEDIA*/
+/*Footer Media*/
 @media (max-width: 1200px) {
   .footer p {
     font-size: .75em;
@@ -837,14 +837,14 @@ div.contact-info h4,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: unset;
     -ms-flex-pack: unset;
     justify-content: unset;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 30px;
     padding-bottom: 30px;
   }
