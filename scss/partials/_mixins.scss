@@ -54,7 +54,13 @@
 
 // Alternative way to structure mixins, testing to see what is best for needs
 @mixin animation-slider() {
-  .span1, .span2, .span3 {
+  .span1 {
+    @content;
+  }
+  .span2 {
+    @content;
+  }
+  .span3 {
     @content;
   }
 }
