@@ -4,7 +4,7 @@
 }
 
 .bg-color-primary li a {
-  color: #000000;
+  color: #ffffff;
 }
 
 .bg-color-secondary {
@@ -13,13 +13,12 @@
 }
 
 .bg-color-secondary li a {
-  color: #ffffff;
+  color: #000000;
 }
 
 a {
   text-align: center;
   cursor: pointer;
-  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -145,7 +144,6 @@ hr {
 }
 
 .main-navbar a {
-  color: #ffffff;
   font-size: .75em;
 }
 
@@ -166,7 +164,6 @@ hr {
   align-items: flex-end;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  color: #ffffff;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -394,7 +391,6 @@ img.language-logo-width {
   display: -ms-flexbox;
   display: flex;
   background-image: url(../img/services-code.jpg);
-  color: #ffffff;
   position: relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -505,12 +501,6 @@ img.language-logo-width {
   margin-left: 40px;
 }
 
-.progressBar2 {
-  max-width: 92.5%;
-  background-color: #000000;
-  height: 2px;
-}
-
 .progressBar2.progressBar3 {
   max-width: 80%;
 }
@@ -520,7 +510,6 @@ img.language-logo-width {
 }
 
 section#container-contact {
-  color: #000000;
   line-height: 1.4;
   padding: 1em;
   max-width: 1170px;

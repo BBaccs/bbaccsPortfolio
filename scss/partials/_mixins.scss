@@ -20,7 +20,7 @@
 
 // Set text color bases on bg
 @function set-link-color($color) {
-  @if(lightness($color) > 50) {
+  @if(lightness($color) < 50) {
     @return $primary-font-color;
   }
   @else { 
