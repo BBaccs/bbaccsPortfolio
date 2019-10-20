@@ -112,19 +112,14 @@ h2 {
 /*NAVBAR*/
 
 .main-navbar ul {
-	@include display-grid();
-	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+	@include display-flex();
+	@include align-items-justify-cont(center, center);
 	padding-top: 20px;
 	margin-top: 0px;
-}
-
-.main-navbar ul {
 	-ms-flex-preferred-size: 100%;
-	    flex-basis: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    @include display-flex();
+	flex-basis: 100%;
+	-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
 }
 
 .main-navbar li {
@@ -462,19 +457,25 @@ img.language-logo-width {
 	    grid-template-columns: 1fr;
 }
 
+.skills-hr {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	top: 10px;
+}
+
+.skills-hr hr {
+	width: 8.5%;
+	position: absolute;
+	top: 100px;
+}
+
 .hardSkills h2 {
 	text-align: center;
 	margin-right: 40px;
 	margin-left: 40px;
 }
-
-.progressBar2.progressBar3 {
-	max-width: 80%;
-}
-
-.progressBar2.progressBar4 {
-	max-width: 30%;
-	}
 
   //contact form
   section#container-contact {
@@ -697,8 +698,8 @@ div.contact-info h4,
 		}
 		.main-navbar ul {
 			width: 100%;
-			@include display-flex();
-			@include align-items-justify-cont(center, center);
+					@include display-flex();
+					@include align-items-justify-cont(center, center);
     			-ms-flex-wrap: wrap;
     			    flex-wrap: wrap;
 		}
