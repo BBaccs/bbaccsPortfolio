@@ -1,0 +1,21 @@
+// Set text color bases on bg
+@function set-text-color($color) {
+  // If bg color is darker
+  @if(lightness($color) < 50) {
+    @return $primary-font-color;
+  }
+  // If bg color is lighter
+  @else { 
+    @return $secondary-font-color;
+  }
+}
+
+// Set text color bases on bg
+@function set-link-color($color) {
+  @if(lightness($color) < 50) {
+    @return $primary-font-color;
+  }
+  @else { 
+    @return $secondary-font-color;
+  }
+}
