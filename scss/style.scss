@@ -459,8 +459,8 @@ img.language-logo-width {
 
 .skills-hr {
 	position: absolute;
-	display: flex;
-	justify-content: center;
+	@include display-flex();
+	@include align-items-justify-cont(unset, center);
 	width: 100%;
 	top: 10px;
 }

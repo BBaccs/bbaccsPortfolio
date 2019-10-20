@@ -492,9 +492,12 @@ img.language-logo-width {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   top: 10px;
 }
