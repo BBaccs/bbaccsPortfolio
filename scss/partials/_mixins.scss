@@ -30,6 +30,11 @@
 	display: flex;
 }
 
+@mixin display-grid() {
+	display: -ms-grid;
+	display: grid;
+}
+
 // Set text color bases on bg
 @function set-text-color($color) {
   // If bg color is darker

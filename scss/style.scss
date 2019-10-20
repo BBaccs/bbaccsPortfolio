@@ -112,8 +112,7 @@ h2 {
 /*NAVBAR*/
 
 .main-navbar ul {
-	display: -ms-grid;
-	display: grid;
+	@include display-grid();
 	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
 	padding-top: 20px;
@@ -238,8 +237,7 @@ h2 {
 }
 
 #portfolio-images {
-	display: -ms-grid;
-	display: grid;
+	@include display-grid();
 	-ms-grid-columns: 1fr 1fr 1fr;
 	    grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 30px;
@@ -439,8 +437,7 @@ img.language-logo-width {
 }
 
 #goalsContainer  {
-	display: -ms-grid;
-	display: grid;
+	@include display-grid();
 	-ms-grid-columns: 1fr 1fr;
 	    grid-template-columns: 1fr 1fr;
 	grid-gap: 4em;
@@ -470,8 +467,7 @@ img.language-logo-width {
 /*hobbies*/
 
 .hobbies {
-	display: -ms-grid;
-	display: grid;
+	@include display-grid();
 	-ms-grid-rows: 1fr;
 	    grid-template-rows: 1fr;
 }
@@ -479,8 +475,7 @@ img.language-logo-width {
 /*Hard Skills*/
 
 .hardSkills {
-	display: -ms-grid;
-	display: grid;
+	@include display-grid();
 	-ms-grid-columns: 1fr;
 	    grid-template-columns: 1fr;
 }
@@ -536,7 +531,7 @@ div.contact-info h4,
 
 /* Form Styles */
 .contact form {
-    display: grid;
+		@include display-grid();
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
@@ -823,8 +818,8 @@ div.contact-info h4,
 
 @media(min-width:700px) {
   .wrapper {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+		@include display-grid();
+    grid-template-columns: 1fr 2fr;
   }
   .wrapper > * {
       padding: 2em;
