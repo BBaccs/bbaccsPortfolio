@@ -264,10 +264,6 @@ hr {
   text-align: center;
 }
 
-.portfolio a:before {
-  background-color: #000000;
-}
-
 .portfolioItem {
   height: 100%;
   width: 100%;
@@ -369,7 +365,7 @@ img.language-logo-width {
   transition-duration: 2s;
   color: #ffffff;
   font-size: 0;
-  z-index: 1200;
+  z-index: 2;
   text-shadow: 1px 1px 1px #000000;
   width: 100%;
 }
@@ -756,6 +752,12 @@ div.contact-info h4,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }

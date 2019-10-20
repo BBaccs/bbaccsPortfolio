@@ -243,10 +243,6 @@ h2 {
 	text-align: center;
 }
 
-.portfolio a:before {
-	background-color: $secondary-font-color;
-}
-
 .portfolioItem {
 	height: 100%;
 	width: 100%;
@@ -347,7 +343,7 @@ img.language-logo-width {
 		@include transition-duration(2s);
     color: $primary-font-color;
     font-size: 0;
-    z-index: 1200;
+    z-index: 2;
     text-shadow: 1px 1px 1px $secondary-font-color;
     width: 100%;
 }
@@ -701,7 +697,8 @@ div.contact-info h4,
 		}
 		.main-navbar ul {
 			width: 100%;
-			    @include display-flex();
+			@include display-flex();
+			@include align-items-justify-cont(center, center);
     			-ms-flex-wrap: wrap;
     			    flex-wrap: wrap;
 		}
