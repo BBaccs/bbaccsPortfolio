@@ -1,7 +1,6 @@
 // ****Mixins****
 
 @mixin align-items-justify-cont($align-items, $justify-content) {
-
   // Align items
 	-webkit-box-align: $align-items;
     -ms-flex-align: $align-items;
@@ -11,12 +10,6 @@
     -webkit-box-pack: $justify-content;
 		-ms-flex-pack: $justify-content;
 		justify-content: $justify-content;
-}
-
-@mixin transition-duration($property) {
-	-webkit-transition-duration: $property;
-	     -o-transition-duration: $property;
-	        transition-duration: $property;
 }
 
 @mixin display-flex() {
@@ -30,6 +23,18 @@
 	display: grid;
 }
 
+@mixin flex-wrap($property) {
+  -ms-flex-wrap: $property;
+      flex-wrap: $property;
+}
+
+
+@mixin transition-duration($property) {
+	-webkit-transition-duration: $property;
+	     -o-transition-duration: $property;
+	        transition-duration: $property;
+}
+
 @mixin translate($percentage) {
   -webkit-transform: translate($percentage);
   -ms-transform: translate($percentage);
@@ -41,8 +46,6 @@
 	-ms-transform: $property-number;
 	    transform: $property-number;
 }
-
-
 
 // Alternative way to structure mixins, testing to see what is best for needs
 @mixin animation-slider() {

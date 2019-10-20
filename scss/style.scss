@@ -10,15 +10,17 @@
 
 //Portfolio
 
+a, button, #portfolio-images li  {
+	cursor: pointer;
+}
+
 a {
 	text-align: center;
-	cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 button {
-	cursor: pointer;
 	background-color: inherit;
 	padding: 0px;
   border-style: none;
@@ -114,12 +116,11 @@ h2 {
 .main-navbar ul {
 	@include display-flex();
 	@include align-items-justify-cont(center, center);
+	@include flex-wrap(wrap);
 	padding-top: 20px;
 	margin-top: 0px;
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
-	-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
 }
 
 .main-navbar li {
@@ -138,12 +139,11 @@ h2 {
 .title {
 	@include display-flex();
 	@include align-items-justify-cont(end, center);
+	@include flex-wrap(wrap);
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
 	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
@@ -187,7 +187,7 @@ h2 {
 .programming-language-container {
 	@include display-flex();
 	@include align-items-justify-cont(unset, center);
-	flex-wrap: inherit;
+	@include flex-wrap(inherit);
 	width: 100%;
 }
 
@@ -204,9 +204,8 @@ h2 {
 
 .portfolio {
 	@include display-flex();
+	@include flex-wrap(wrap);
 	text-align: center;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
 	padding-bottom: 50px;
 	width: 100%;
 }
@@ -216,8 +215,7 @@ h2 {
 }
 
 .portfolio li {
-	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
+	@include flex-wrap(wrap);
 	font-size: .85rem;
 	text-decoration: none;
 	position: relative;
@@ -278,7 +276,6 @@ img.language-logo-width {
 /*Portfolio Animations*/
 
 #portfolio-images li {
-	cursor: pointer;
 	position: relative;
 }
  
@@ -660,8 +657,7 @@ div.contact-info h4,
 	@media (max-width: 500px){
 		.main-picture {
 			@include display-flex();
-			-ms-flex-wrap: wrap;
-			    flex-wrap: wrap;
+			@include flex-wrap(wrap);
 			padding-bottom: 75px;
 		}
 		.title {
@@ -670,15 +666,13 @@ div.contact-info h4,
 		.main-navbar {
 			@include display-flex();
 			@include align-items-justify-cont(center, center);
-			-ms-flex-wrap: wrap;
-			    flex-wrap: wrap;
+			@include flex-wrap(wrap);
 		}
 		.main-navbar ul {
 			width: 100%;
 					@include display-flex();
 					@include align-items-justify-cont(center, center);
-    			-ms-flex-wrap: wrap;
-    			    flex-wrap: wrap;
+					@include flex-wrap(wrap);
 		}
 		.main-navbar li {
 			width: 100%;
@@ -704,9 +698,8 @@ div.contact-info h4,
 
 @media (max-width: 800px){
 	.services {
+		@include flex-wrap(wrap);
 		min-height: 1150px;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
 	}
 	.services ul {
 		margin-left: 15px;
@@ -753,8 +746,7 @@ div.contact-info h4,
 		.footer {
 			@include display-flex();
 			@include align-items-justify-cont(center, unset);
-			-ms-flex-wrap: wrap;
-			    flex-wrap: wrap;
+			@include flex-wrap(wrap);
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}
