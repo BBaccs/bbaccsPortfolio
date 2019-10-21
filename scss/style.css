@@ -545,8 +545,9 @@ section#container-contact > h2 {
   font-size: 2em;
 }
 
-.contact h3 {
+.contact-info > p:first-child {
   font-size: 1.3em;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -560,8 +561,12 @@ section#container-contact > h2 {
 
 div.contact-info h4,
 .contact-info li {
-  text-align: left;
   margin: 0 0 1rem 0;
+}
+
+.contact-info > ul > li,
+.contact-info > p {
+  text-align: center;
 }
 
 /* Form Styles */
@@ -848,9 +853,9 @@ div.contact-info h4,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 30px;
@@ -876,9 +881,8 @@ div.contact-info h4,
   .wrapper > * {
     padding: 2em;
   }
-  #container-contact > h4,
-  .contact-info > ul,
-  .contact-info > h3 {
+  .contact-info > ul > li,
+  .contact-info > p {
     text-align: left;
   }
 }

@@ -472,8 +472,9 @@ section#container-contact > h2 {
     font-size: 2em;
 }
 
-.contact h3 {
-    font-size: 1.3em; 
+.contact-info > p:first-child {
+		font-size: 1.3em; 
+		font-weight: bold;
 }
 
 .wrapper {
@@ -486,9 +487,13 @@ section#container-contact > h2 {
 
 div.contact-info h4,
 .contact-info li {
-    text-align: left;
     margin: 0 0 1rem 0;
 }
+
+.contact-info > ul > li,
+  .contact-info > p {
+      text-align: center;
+  } 
 
 /* Form Styles */
 .contact form {
@@ -737,7 +742,7 @@ div.contact-info h4,
 	@media (max-width: 800px){
 		.footer {
 			@include display-flex();
-			@include align-items-justify-cont(center, unset);
+			@include align-items-justify-cont(center, center);
 			@include flex-wrap(wrap);
 			padding-top: 30px;
 			padding-bottom: 30px;
@@ -761,9 +766,8 @@ div.contact-info h4,
   .wrapper > * {
       padding: 2em;
   }
-  #container-contact > h4,
-  .contact-info > ul,
-  .contact-info > h3  {
+  .contact-info > ul > li,
+  .contact-info > p {
       text-align: left;
   } 
 }
