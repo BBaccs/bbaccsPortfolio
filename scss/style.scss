@@ -97,6 +97,10 @@ h2 {
     background: $tertiary-bg-color;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 125, from($tertiary-bg-color), to($quaternary-bg-color));
 }
+.off-screen-sr {
+	position: absolute;
+	left: -1000000px;
+}
 
 /*Main Page*/
 
@@ -568,7 +572,7 @@ div.contact-info h4,
 }
 
 .socialMediaContainer li {
-	@include transform(rotate(30deg));
+	@include transform(rotate(-30deg));
 	border: 1px solid $secondary-border-color;
 	padding: 7.5px;
 	margin-left: 30px;
@@ -588,8 +592,8 @@ div.contact-info h4,
 	visibility: none;
 }
 
-.rotate30 {
-	transform: rotate(-30deg);
+.rotate {
+	@include transform(rotate(30deg));
 }
 
 .linkAnimation:hover:before {
