@@ -110,7 +110,7 @@ hr {
 
 /*Main Page*/
 .main-picture {
-  background-image: url(../img/laptop.jpg);
+  background-image: url(../img/background-imgs/laptop.jpg);
   height: 100vh;
   background-position-y: 10%;
   background-position-x: 50%;
@@ -421,7 +421,7 @@ img.language-logo-width {
   -ms-flex-pack: unset;
   justify-content: unset;
   text-shadow: 1px 1px 1px #000000;
-  background-image: url(../img/services-code.jpg);
+  background-image: url(../img/background-imgs/services-code.jpg);
   position: relative;
   min-height: 450px;
 }

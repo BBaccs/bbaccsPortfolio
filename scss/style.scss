@@ -105,7 +105,7 @@ h2 {
 /*Main Page*/
 
 .main-picture {
-	background-image: url(../img/laptop.jpg);
+	background-image: url(../img/background-imgs/laptop.jpg);
     height: 100vh;
     background-position-y: 10%;
     background-position-x: 50%;
@@ -349,7 +349,7 @@ img.language-logo-width {
 	@include display-flex();
 	@include align-items-justify-cont(center, unset);
 	text-shadow: 1px 1px 1px $secondary-font-color;
-	background-image: url(../img/services-code.jpg);
+	background-image: url(../img/background-imgs/services-code.jpg);
 	position: relative;
 	min-height: 450px;
 }
