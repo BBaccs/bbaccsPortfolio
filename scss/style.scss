@@ -105,12 +105,11 @@ h2 {
 /*Main Page*/
 
 .main-picture {
-	background-image: url(../img/background-imgs/laptop.jpg);
-    height: 100vh;
-    background-position-y: 10%;
-    background-position-x: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+	height: 100vh;
+	background-position-y: 10%;
+	background-position-x: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /*NAVBAR*/
@@ -349,7 +348,6 @@ img.language-logo-width {
 	@include display-flex();
 	@include align-items-justify-cont(center, unset);
 	text-shadow: 1px 1px 1px $secondary-font-color;
-	background-image: url(../img/background-imgs/services-code.jpg);
 	position: relative;
 	min-height: 450px;
 }
@@ -657,6 +655,21 @@ div.contact-info h4,
 		}	
 	}
 
+	// Header MEDIA
+
+	// Without two media queries some browsers will actually download both images
+@media (min-width: 1px) {
+	.main-picture {
+		background-image: url(../img/background-imgs/laptop-1250.jpg);
+	}
+}
+
+@media (min-width: 1000px) {
+	.main-picture {
+		background-image: url(../img/background-imgs/laptop.jpg);
+	}
+}
+
 	/*Nav MEDIA*/
 
 	@media (max-width: 500px){
@@ -693,6 +706,19 @@ div.contact-info h4,
 		}
 
 /*Services MEDIA*/
+
+// Without two media queries some browsers will actually download both images
+@media (min-width: 1px) {
+	.services {
+		background-image: url(../img/background-imgs/services-code-1125.jpg);
+	}
+}
+
+@media (min-width: 1000px) {
+	.services {
+		background-image: url(../img/background-imgs/services-code.jpg);
+	}
+}
 
 @media (max-width: 800px){
 	.services {

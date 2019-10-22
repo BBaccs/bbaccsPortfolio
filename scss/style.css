@@ -110,7 +110,6 @@ hr {
 
 /*Main Page*/
 .main-picture {
-  background-image: url(../img/background-imgs/laptop.jpg);
   height: 100vh;
   background-position-y: 10%;
   background-position-x: 50%;
@@ -421,7 +420,6 @@ img.language-logo-width {
   -ms-flex-pack: unset;
   justify-content: unset;
   text-shadow: 1px 1px 1px #000000;
-  background-image: url(../img/background-imgs/services-code.jpg);
   position: relative;
   min-height: 450px;
 }
@@ -762,6 +760,18 @@ div.contact-info h4,
   }
 }
 
+@media (min-width: 1px) {
+  .main-picture {
+    background-image: url(../img/background-imgs/laptop-1250.jpg);
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-picture {
+    background-image: url(../img/background-imgs/laptop.jpg);
+  }
+}
+
 /*Nav MEDIA*/
 @media (max-width: 500px) {
   .main-picture {
@@ -809,6 +819,18 @@ div.contact-info h4,
 }
 
 /*Services MEDIA*/
+@media (min-width: 1px) {
+  .services {
+    background-image: url(../img/background-imgs/services-code-1125.jpg);
+  }
+}
+
+@media (min-width: 1000px) {
+  .services {
+    background-image: url(../img/background-imgs/services-code.jpg);
+  }
+}
+
 @media (max-width: 800px) {
   .services {
     -ms-flex-wrap: wrap;
