@@ -206,6 +206,7 @@ h2 {
 
 .portfolio {
 	@include display-flex();
+	@include align-items-justify-cont(unset, center);
 	@include flex-wrap(wrap);
 	text-align: center;
 	padding-bottom: 50px;
