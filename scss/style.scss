@@ -673,12 +673,8 @@ div.contact-info h4,
 			@include display-flex();
 			@include align-items-justify-cont(center, center);
 			@include flex-wrap(wrap);
+			flex-basis: 100%;
 		}
-		.main-navbar ul,
-		.main-navbar li {
-			width: 100%;
-		}
-
 }
 
 		/*Portfolio MEDIA*/
