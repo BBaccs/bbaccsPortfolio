@@ -342,122 +342,24 @@ img.language-logo-width {
 	font-size: 1em;
 }
 
-/*Services*/
+	// Skills
 
-.services {
-	@include display-flex();
-	@include align-items-justify-cont(center, unset);
-	text-shadow: 1px 1px 1px $secondary-font-color;
-	position: relative;
-	min-height: 450px;
+.skills-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
 }
 
-.services h2 {
-	position: absolute;
-	margin-bottom: 0px;
-	margin-top: 50px;
-	left: 1%;
-	right: 1%;
-	margin-left: auto;
-	margin-right: auto;
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
+.skills-wrapper * {
+text-align: center;
 }
 
-.services ul {
-	width: 50%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 20px;
-	padding-right: 20px;
+.skills-wrapper > div {
+max-width: 500px;
+min-width: 200px;
+padding: 20px 20px 0px 10px;
 }
 
-.services li {
-	margin-left: auto;
-  margin-right: auto;
-	min-height: 300px;
-	max-height: 300px;
-	margin-top: 125px;
-	width: 80%;
-}
-
-.services li:nth-child(2) {
-	margin-top: 60px;
-}
-
-.services p {
-	text-align: center;
-}
-
-
-/*Goals*/
-
-.goals {
-	margin-left: 4%;
-	margin-right: 4%;
-}
-
-.goals h2 {
-	text-align: center;
-}
-
-#goalsContainer  {
-	@include display-grid();
-	-ms-grid-columns: 1fr 1fr;
-	    grid-template-columns: 1fr 1fr;
-	grid-gap: 4em;
-	text-align: center;
-	padding-right: 40px;
-}
-
-.goalMiniBox {
-	display: none;
-}
-
-.goalMiniBoxes {
-	@include box-shadow(0, 1.8vw, 4vw, -0.7vw, $primary-shadow-color);
-	padding: 40px;
-	padding-bottom: 75px;
-	border: 1px solid $primary-border-color;
-	min-height: 425px;
-	border-radius: 40px;
-}
-
-.goal-item {
-	list-style-type: circle; 
-	text-align: start;
-}
-
-/*Hard Skills*/
-
-.hardSkills {
-	@include display-grid();
-	-ms-grid-columns: 1fr;
-	    grid-template-columns: 1fr;
-}
-
-.skills-hr,
-.skills-hr hr {
-	position: absolute;
-}
-
-.skills-hr {
-	@include display-flex();
-	@include align-items-justify-cont(unset, center);
-	width: 100%;
-	top: 10px;
-}
-
-.skills-hr hr {
-	width: 8.5%;
-	top: 100px;
-}
-
-.hardSkills h2 {
-	margin-right: 40px;
-	margin-left: 40px;
-}
 
   // Contact form
   section#container-contact {
@@ -705,43 +607,25 @@ div.contact-info h4,
 			}
 		}
 
-/*Services MEDIA*/
+/*Skills MEDIA*/
 
 // Without two media queries some browsers will actually download both images
 @media (min-width: 1px) {
-	.services {
+	#skills {
 		background-image: url(../img/background-imgs/services-code-1125.jpg);
 	}
 }
 
 @media (min-width: 1000px) {
-	.services {
+	#skills {
 		background-image: url(../img/background-imgs/services-code.jpg);
 	}
 }
 
 @media (max-width: 800px){
-	.services {
-		@include flex-wrap(wrap);
-		min-height: 1150px;
-	}
-	.services ul {
-		margin-left: 15px;
-		margin-right: 15px;
-		width: 100%;
-	}
-}
-
-@media (max-width: 360px){
-	.services ul {
-		padding-bottom: 100px;
-	}
-}
-
-@media (max-width: 800px){
-	li.webDesign {
-		margin-top: 100px;
-		margin-bottom: 85px;
+	.skills-wrapper {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
