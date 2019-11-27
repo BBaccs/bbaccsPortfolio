@@ -408,6 +408,10 @@ img.language-logo-width {
   font-size: 1em;
 }
 
+#skills {
+  padding-top: 20px;
+}
+
 .skills-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,6 +629,7 @@ div.contact-info h4,
   margin-top: 10px;
   padding: 1em;
   font-size: 1.25em;
+  text-align: center;
 }
 
 .contactAlert,
