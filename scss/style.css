@@ -810,6 +810,7 @@ div.contact-info h4,
   }
 }
 
+/* Hamburger Menu*/
 .main-navbar {
   position: fixed;
   display: -webkit-box;
@@ -823,6 +824,19 @@ div.contact-info h4,
   height: 60px;
   background-color: #444444;
   z-index: 1;
+}
+
+.hamburger-menu.back-button-toggled {
+  top: 1rem;
+}
+
+.hamburger-toggled-links {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (min-width: 1025px) {
@@ -844,22 +858,19 @@ div.contact-info h4,
     width: 30px;
     height: 30px;
   }
+  .hamburger-toggled-links {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .main-navbar.hamburger-menu-toggled {
+    height: 6vh;
+  }
 }
 
-.main-navbar.hamburger-menu-toggled {
-  height: 25vh;
-}
-
-.hamburger-menu.back-button-toggled {
-  top: 1rem;
-}
-
-.hamburger-toggled-links {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media (max-width: 500px) {
+  .main-navbar.hamburger-menu-toggled {
+    height: 20vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -698,6 +698,10 @@ div.contact-info h4,
   } 
 }
 
+
+
+/* Hamburger Menu*/
+
 .main-navbar {
 	position: fixed;
 	display: flex;
@@ -707,6 +711,15 @@ div.contact-info h4,
 	height: 60px;
 	background-color: $charcoal;
 	z-index: 1;
+}
+
+.hamburger-menu.back-button-toggled {
+	top: 1rem;
+}
+
+.hamburger-toggled-links {
+	display: flex !important;
+	align-items: flex-start;
 }
 
 @media(min-width: 1025px) {
@@ -728,18 +741,22 @@ div.contact-info h4,
 		width: 30px;
 		height: 30px;
 	}
+	.hamburger-toggled-links {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.main-navbar.hamburger-menu-toggled {
+		height: 6vh;
+	}
 }
 
 
-.main-navbar.hamburger-menu-toggled {
-	height: 25vh;
+@media(max-width: 500px) {
+	.main-navbar.hamburger-menu-toggled {
+		height: 20vh;
+	}
 }
 
-.hamburger-menu.back-button-toggled {
-	top: 1rem;
-}
 
-.hamburger-toggled-links {
-	display: flex !important;
-	align-items: flex-start;
-}
+
