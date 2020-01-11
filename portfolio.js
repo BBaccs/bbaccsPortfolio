@@ -9,11 +9,16 @@ const rawCssSite = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
 const portfolioItems = document.querySelectorAll('.portfolioItem');
 const btnReact = document.querySelector("#btnReactApp");
 
-
 //Set functions
 function showAllPortfolioItems(){
     for(i = 0; i < portfolioItems.length; i++){
         portfolioItems[i].classList.remove('hide');
+    }
+}
+
+function hidePortfolioItems(portfolioItems) {
+    for(i = 0; i < portfolioItems.length; i++){
+        portfolioItems[i].classList.add('hide');
     }
 }
 
@@ -114,24 +119,18 @@ btnShowAll.addEventListener('click', function () {
 
 btnTemplate.addEventListener('click', function () {
     showAllPortfolioItems();
-    for(i = 0; i < templateSite.length; i++){
-        templateSite[i].classList.add('hide');
-    }
+    hidePortfolioItems(templateSite);
 });
 
 btnJavaApp.addEventListener('click', function () {
     showAllPortfolioItems();
-    for(i = 0; i < javascriptApp.length; i++){
-        javascriptApp[i].classList.add('hide');
-    }
+    hidePortfolioItems(javascriptApp);
 });
 
 
 btnRaw.addEventListener('click', function () {
     showAllPortfolioItems();
-    for(i = 0; i < rawCssSite.length; i++){
-        rawCssSite[i].classList.add('hide');
-    }
+    hidePortfolioItems(rawCssSite);
 });
 
 btnReact.addEventListener('click', function (){
