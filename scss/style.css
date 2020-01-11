@@ -311,6 +311,15 @@ img.language-logo-width {
   width: 8.5%;
 }
 
+#btnJavaApp img {
+  margin-right: -35px;
+  width: 185px;
+}
+
+#btnReactApp img {
+  position: relative;
+}
+
 /*Portfolio Animations*/
 #portfolio-images li {
   position: relative;
@@ -520,6 +529,10 @@ div.contact-info h4,
   -webkit-transition: 2s ease-out;
   transition: 2s ease-out;
   border: 1px solid #444444;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 /*Footer*/
