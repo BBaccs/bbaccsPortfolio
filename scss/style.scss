@@ -272,6 +272,15 @@ img.language-logo-width {
 	width: 8.5%;
 }
 
+#btnJavaApp img {
+	margin-right: -35px; 
+	width: 185px;
+}
+
+#btnReactApp img {
+	position: relative;
+}
+
 /*Portfolio Animations*/
 
 #portfolio-images li {
@@ -445,6 +454,10 @@ div.contact-info h4,
     outline: 0;
     transition: 2s ease-out;
     border: 1px solid $primary-bg-color;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
 }
 
 /*Footer*/
@@ -657,7 +670,7 @@ div.contact-info h4,
 			@include align-items-justify-cont(center, center);
 			@include flex-wrap(wrap);
 			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-bottom: 40px;
 			height: 100%;
 		}
 		.socialMediaContainer {
