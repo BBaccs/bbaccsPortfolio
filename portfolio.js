@@ -8,6 +8,9 @@ const btnRaw = document.querySelector("#btnRaw");
 const rawCssSite = document.querySelectorAll('.portfolioItem:not(.rawCSS)');
 const portfolioItems = document.querySelectorAll('.portfolioItem');
 const btnReact = document.querySelector("#btnReactApp");
+const hamburgerMenuBtn = document.querySelector('.hamburger-menu');
+const mainNavbar = document.querySelector('.main-navbar');
+const mainNavbarLinks = document.querySelector('.main-navbar ul');
 
 //Set functions
 function showAllPortfolioItems(){
@@ -155,3 +158,18 @@ btnReact.addEventListener('click', function (){
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// listen for hamburger button click
+hamburgerMenuBtn.addEventListener('click', function(){
+    if (hamburgerMenuBtn.classList.contains('back-button-toggled')) {
+        hamburgerMenuBtn.classList.remove('back-button-toggled');
+        mainNavbar.classList.remove('hamburger-menu-toggled');
+        mainNavbarLinks.classList.remove('hamburger-toggled-links')
+    } else {
+        hamburgerMenuBtn.classList.add('back-button-toggled');
+        mainNavbar.classList.add('hamburger-menu-toggled');
+        mainNavbarLinks.classList.add('hamburger-toggled-links')
+      
+    }
+
+});

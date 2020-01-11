@@ -146,7 +146,6 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	height: 100%;
-	margin-top: 100px;
 	font-size: 1.8rem;
 }
 
@@ -699,11 +698,48 @@ div.contact-info h4,
   } 
 }
 
-
-.fa-bars.hamburger-menu {
+.main-navbar {
 	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: $charcoal;
+	z-index: 1;
+}
+
+@media(min-width: 1025px) {
+	button.hamburger-menu {
+		display: none;
+	}
+}
+
+@media(max-width: 1025px) {
+	.main-navbar > ul {
+		display: none;
+	}
+	button.hamburger-menu  {
+		position: fixed;
+		color: $white;
+		left: 1rem;
+	}
+	button.hamburger-menu .fa-bars.hamburger-icon {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+
+.main-navbar.hamburger-menu-toggled {
+	height: 25vh;
+}
+
+.hamburger-menu.back-button-toggled {
 	top: 1rem;
-	left: .5rem;
-	width: 30px;
-	height: 30px;
+}
+
+.hamburger-toggled-links {
+	display: flex !important;
+	align-items: flex-start;
 }
