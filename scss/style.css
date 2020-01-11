@@ -797,4 +797,12 @@ div.contact-info h4,
     text-align: left;
   }
 }
+
+.fa-bars.hamburger-menu {
+  position: fixed;
+  top: 1rem;
+  left: .5rem;
+  width: 30px;
+  height: 30px;
+}
 /*# sourceMappingURL=style.css.map */

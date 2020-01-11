@@ -1,0 +1,24 @@
+<!--- 
+	flex basis is like a changing width
+	she said "don't use width on flex items use flex basis?" (to use flexbox ass it was intended)
+	works only on main axis
+	works only on flex items
+
+// Responsive pictures, see how to make it more cross browser compatiable @ frontendmasters
+<picture>
+	//Img will not display unless screen is at least 1200px wide
+	<source srcset="img/technology-logos-original.png" media="(min-width: 1200px">
+	<source srcset="img/technology-logos-500.png" media="(min-width: 800px">
+	/The <img /> is the fall back for non browser compatible w/ picture tag and mobile version. 
+	<img style="margin-right: -35px; width: 185px;" alt="" class="img-position language-logo-width" src="img/technology-logos/js-logo.png" />
+</picture>
+
+
+//Picture element HTML5 shiv
+document.createElemet("picture");
+//picturefill script
+<script src="picturefill.min.js"></script>
+
+//Make use of that awesome attribute selector Ex: [class*='col-']{display: none;}
+//That will target all html tags w/ a class that starts with col-   (so col-1, col-2, col-3 etc.)(I believe)
+	--->

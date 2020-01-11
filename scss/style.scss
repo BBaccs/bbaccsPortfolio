@@ -66,7 +66,7 @@ body {
 	font-family: 'Helios_Rounded';
 	font-weight: normal;
 	font-style: normal;
-	background-color: #f9f9f9;
+	background-color: $secondary-bg-color;
 }
 
 h2 {
@@ -684,4 +684,13 @@ div.contact-info h4,
   .contact-info > p {
       text-align: left;
   } 
+}
+
+
+.fa-bars.hamburger-menu {
+	position: fixed;
+	top: 1rem;
+	left: .5rem;
+	width: 30px;
+	height: 30px;
 }
