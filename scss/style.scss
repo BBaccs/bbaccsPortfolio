@@ -720,6 +720,7 @@ div.contact-info h4,
 .hamburger-toggled-links {
 	display: flex !important;
 	align-items: flex-start;
+	width: 50%;
 }
 
 @media(min-width: 1025px) {
@@ -739,13 +740,15 @@ div.contact-info h4,
 		z-index: 20;
 	}
 	button.hamburger-menu .fa-bars.hamburger-icon {
-		width: 30px;
-		height: 30px;
+		width: 1.8rem;
+		height: 1.8rem;
 	}
 	.hamburger-toggled-links {
 		position: fixed;
 		top: 0;
-		width: 100%;
+	}
+	.hamburger-toggled-links > li{
+		padding: .2rem 0;
 	}
 	.main-navbar.hamburger-menu-toggled {
 		height: 10vh;
@@ -762,7 +765,7 @@ div.contact-info h4,
 @media(max-width: 320px) {
 	.main-navbar.hamburger-menu-toggled {
 		height: 25vh;
-		padding: 5px 0 0 0;
+		padding: 1.25rem 0 0 0;
 	}
 }
 

@@ -25,6 +25,12 @@ function hidePortfolioItems(portfolioItems) {
     }
 }
 
+function toggleMobileNavMenu() {
+    hamburgerMenuBtn.classList.toggle('back-button-toggled');
+    mainNavbar.classList.toggle('hamburger-menu-toggled');
+    mainNavbarLinks.classList.toggle('hamburger-toggled-links');
+}
+
 // Submit form
 function submitForm(e) {
     // Get values
@@ -159,9 +165,15 @@ btnReact.addEventListener('click', function (){
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-// listen for hamburger button click
+// Listen for hamburger button click
 hamburgerMenuBtn.addEventListener('click', function(){
-        hamburgerMenuBtn.classList.toggle('back-button-toggled');
-        mainNavbar.classList.toggle('hamburger-menu-toggled');
-        mainNavbarLinks.classList.toggle('hamburger-toggled-links')
+    toggleMobileNavMenu();
+});
+
+// List for link click when hamburger menu dropdown is active
+mainNavbarLinks.addEventListener('click', function(e){
+    console.log(e.target.parentElement.parentElement);
+    if (e.target.parentElement.parentElement.classList.contains('hamburger-toggled-links')) {
+        toggleMobileNavMenu();
+    } 
 });
