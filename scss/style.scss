@@ -65,7 +65,8 @@ body {
 	font-size: 1.25rem;
 	font-family: 'Helios_Rounded';
 	font-weight: normal;
-  font-style: normal;
+	font-style: normal;
+	background-color: #f9f9f9;
 }
 
 h2 {
@@ -129,10 +130,6 @@ h2 {
 	margin-right: 10px;
 	text-decoration: none;
 	position: relative;
-}
-
-.main-navbar a {
-	font-size: .75em;
 }
 
 /*Main page content*/
@@ -455,7 +452,7 @@ div.contact-info h4,
 .footer {
 	@include display-flex();
 	@include align-items-justify-cont(center, unset);
-	height: 15vh;
+	height: 20vh;
 	margin-top: 50px;
 	position: relative;
 }
@@ -661,16 +658,18 @@ div.contact-info h4,
 			@include flex-wrap(wrap);
 			padding-top: 30px;
 			padding-bottom: 30px;
+			height: 100%;
 		}
 		.socialMediaContainer {
 			margin-right: 0px;
 			position: inherit;
 		}
 		footer.footer > p {
+			text-align: center;
 			margin-left: 0px;
 		}
-  }
-
+	}
+	
 /* Contact form */
 
 @media(min-width:700px) {
