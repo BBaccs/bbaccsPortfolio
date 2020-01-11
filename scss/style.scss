@@ -736,6 +736,7 @@ div.contact-info h4,
 		position: fixed;
 		color: $white;
 		left: 1rem;
+		z-index: 20;
 	}
 	button.hamburger-menu .fa-bars.hamburger-icon {
 		width: 30px;
@@ -747,14 +748,21 @@ div.contact-info h4,
 		width: 100%;
 	}
 	.main-navbar.hamburger-menu-toggled {
-		height: 6vh;
+		height: 10vh;
 	}
 }
 
 
 @media(max-width: 500px) {
 	.main-navbar.hamburger-menu-toggled {
-		height: 20vh;
+		height: 25vh;
+	}
+}
+
+@media(max-width: 320px) {
+	.main-navbar.hamburger-menu-toggled {
+		height: 25vh;
+		padding: 5px 0 0 0;
 	}
 }
 

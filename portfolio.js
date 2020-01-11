@@ -161,15 +161,7 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 // listen for hamburger button click
 hamburgerMenuBtn.addEventListener('click', function(){
-    if (hamburgerMenuBtn.classList.contains('back-button-toggled')) {
-        hamburgerMenuBtn.classList.remove('back-button-toggled');
-        mainNavbar.classList.remove('hamburger-menu-toggled');
-        mainNavbarLinks.classList.remove('hamburger-toggled-links')
-    } else {
-        hamburgerMenuBtn.classList.add('back-button-toggled');
-        mainNavbar.classList.add('hamburger-menu-toggled');
-        mainNavbarLinks.classList.add('hamburger-toggled-links')
-      
-    }
-
+        hamburgerMenuBtn.classList.toggle('back-button-toggled');
+        mainNavbar.classList.toggle('hamburger-menu-toggled');
+        mainNavbarLinks.classList.toggle('hamburger-toggled-links')
 });
