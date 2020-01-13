@@ -753,6 +753,8 @@ div.contact-info h4,
 	}
 	.main-navbar.hamburger-menu-toggled {
 		height: 10vh;
+		display: flex;
+		justify-content: center;
 	}
 }
 
