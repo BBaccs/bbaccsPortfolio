@@ -163,6 +163,7 @@ h2 {
     /*-webkit-clip-path: polygon(10% 1%, 100% 1%, 100% 96%, 7% 100%);*/
 }
 
+
 /*Portfolio*/ 
 /*Promamming Languages Logos*/
 
@@ -265,6 +266,7 @@ img.language-logo-width {
 	position: relative;
 }
 
+
 /*Portfolio Animations*/
 
 #portfolio-images li {
@@ -332,6 +334,7 @@ img.language-logo-width {
 	font-size: 1em;
 }
 
+
 // Skills
 #skills {
 	padding-top: 20px;
@@ -393,6 +396,7 @@ div.contact-info h4,
       text-align: center;
   } 
 
+
 /* Form Styles */
 .contact form {
 		@include display-grid();
@@ -443,6 +447,7 @@ div.contact-info h4,
 .mb-40 {
 	margin-bottom: 40px;
 }
+
 
 /*Footer*/
 
@@ -514,6 +519,7 @@ div.contact-info h4,
   		transition: all 0.3s ease-in-out 0s;
 }
 
+
 /*Hamburger menu*/
 .main-navbar {
 	position: fixed;
@@ -533,8 +539,11 @@ div.contact-info h4,
 .hamburger-toggled-links {
 	display: flex !important;
 	align-items: flex-start;
-	width: 50%;
+	// width: 100%;
+	background-color: #444444;
+	padding-bottom: 10px;
 }
+
 
 /*JAVASCRIPT TOGGLE CLASSES*/
 
@@ -568,6 +577,7 @@ div.contact-info h4,
 	display: none;
 }
 
+
 /*MEDIA QUERIES*/
 	/*header Media for Mobile Landscape*/
 
@@ -578,7 +588,6 @@ div.contact-info h4,
 	}
 
 	// Header MEDIA
-
 	// Without two media queries some browsers will actually download both images
 @media (min-width: 1px) {
 	.main-picture {
@@ -591,6 +600,7 @@ div.contact-info h4,
 		background-image: url(../img/background-imgs/laptop.jpg);
 	}
 }
+
 
 	/*Nav MEDIA*/
 
@@ -612,6 +622,7 @@ div.contact-info h4,
 		}
 }
 
+
 		/*Portfolio MEDIA*/
 
 		@media (max-width: 800px){
@@ -627,9 +638,10 @@ div.contact-info h4,
 			}
 		}
 
-/*Skills MEDIA*/
 
+/*Skills MEDIA*/
 // Without two media queries some browsers will actually download both images
+
 @media (min-width: 1px) {
 	#skills {
 		background-image: url(../img/background-imgs/services-code-1125.jpg);
@@ -689,6 +701,7 @@ div.contact-info h4,
 		}
 	}
 	
+
 /* Contact form */
 
 @media(min-width:700px) {
@@ -704,7 +717,6 @@ div.contact-info h4,
       text-align: left;
   } 
 }
-
 
 
 /* Hamburger Menu Media Queries*/
@@ -735,24 +747,6 @@ div.contact-info h4,
 	}
 	.hamburger-toggled-links > li{
 		padding: .2rem 0;
-	}
-	.main-navbar.hamburger-menu-toggled {
-		height: 10vh;
-		display: flex;
-		justify-content: center;
-	}
-}
-
-@media(max-width: 500px) {
-	.main-navbar.hamburger-menu-toggled {
-		height: 25vh;
-	}
-}
-
-@media(max-width: 320px) {
-	.main-navbar.hamburger-menu-toggled {
-		height: 25vh;
-		padding: 1.25rem 0 0 0;
 	}
 }
 
