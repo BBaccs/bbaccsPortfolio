@@ -199,6 +199,10 @@ h2 {
 	width: 100%;
 }
 
+.portfolioItem a {
+	display: block;
+}
+
 .portfolio li {
 	@include flex-wrap(wrap);
 	font-size: .85rem;
@@ -332,6 +336,11 @@ img.language-logo-width {
 	@include translate(-50%);
 	@include transition-duration(2s);
 	font-size: 1em;
+}
+
+.portfolio-images .mobileProject {
+	max-height: 75%;
+	max-width: 75%;
 }
 
 
