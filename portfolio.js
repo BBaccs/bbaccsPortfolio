@@ -177,3 +177,7 @@ mainNavbarLinks.addEventListener('click', function(e){
         toggleMobileNavMenu();
     } 
 });
+
+
+//TEMPORARY
+confirm('WARNING: This portfolio is under construction. For now, check out my templated portfolio: at https://baccarelladev-portfolio.netlify.app/' );
