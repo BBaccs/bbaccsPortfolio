@@ -214,9 +214,7 @@ h2 {
 	@include display-grid();
 	-ms-grid-columns: 1fr 1fr 1fr;
 	    grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 30px;
-	margin-left: 8%;
-	margin-right: 8%;
+	margin: auto;
 }
 
 .portfolioItem p {
@@ -341,6 +339,7 @@ img.language-logo-width {
 .mobileProject {
 	max-height: 75%;
 	max-width: 75%;
+	margin: auto;
 }
 
 
