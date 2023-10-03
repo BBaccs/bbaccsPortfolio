@@ -1,6 +1,7 @@
 //Set constiables
 const btnJavaApp = document.querySelector('#btnJavaApp');
 const javascriptApp = document.querySelectorAll('.portfolioItem:not(.javascript');
+const reactApp = document.querySelectorAll('.portfolioItem:not(.reactApp)');
 const btnTemplate = document.querySelector('#btnTemplate');
 const templateSite = document.querySelectorAll('.portfolioItem:not(.template');
 const btnShowAll = document.querySelector('#btnAll');
@@ -142,24 +143,29 @@ btnRaw.addEventListener('click', function () {
     hidePortfolioItems(rawCssSite);
 });
 
-btnReact.addEventListener('click', function (){
-    //create div
-    const div = document.createElement('div');
-    const section = document.querySelector('#portfolio');
-    const portfolioImages = document.getElementById('portfolio-images');
-    //insert html
-    div.className = 'reactAlert';
+// btnReact.addEventListener('click', function (){
+//     //create div
+//     const div = document.createElement('div');
+//     const section = document.querySelector('#portfolio');
+//     const portfolioImages = document.getElementById('portfolio-images');
+//     //insert html
+//     div.className = 'reactAlert';
 
-    //add text
-    div.appendChild(document.createTextNode('React work coming soon, for now check out my Vanilla JS Work'));
+//     //add text
+//     div.appendChild(document.createTextNode('React work coming soon, for now check out my Vanilla JS Work'));
     
-    //insert before ul
-    section.insertBefore(div, portfolioImages);
+//     //insert before ul
+//     section.insertBefore(div, portfolioImages);
 
-    //only display alert for a few seconds
-    setTimeout(function(){
-        document.querySelector('.reactAlert').remove();
-    }, 6000);
+//     //only display alert for a few seconds
+//     setTimeout(function(){
+//         document.querySelector('.reactAlert').remove();
+//     }, 6000);
+// });
+
+btnReact.addEventListener('click', function (){
+    showAllPortfolioItems();
+    hidePortfolioItems(reactApp);
 });
 
 // Listen for form submit
