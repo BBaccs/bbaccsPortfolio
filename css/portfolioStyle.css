@@ -799,3 +799,10 @@ img.language-logo-width {
 			margin-left: 0px !important;
 		}
 	}
+
+
+
+
+/* Applying green border to label when input is focused .... Just add class="input-container" to wrapper div of input and label */
+/* Works in CSS, not SCSS */
+/* .input-container:focus-within label {	border:  10px solid green !important;   } */
