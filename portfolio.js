@@ -1,5 +1,3 @@
-'use strict';
-
 //Set constiables
 const btnJavaApp = document.querySelector('#btnJavaApp');
 const javascriptApp = document.querySelectorAll('.portfolioItem:not(.javascript');
@@ -186,22 +184,5 @@ mainNavbarLinks.addEventListener('click', function(e){
     } 
 });
 
-
-// Playing around with some JS:
-
-var person = {
-    firstname: 'default',
-    lastname: 'default',
-    greet: function() {
-        return 'Hi ' + this.firstname;
-    }
-
-}
-
-// console.log(person.greet());
-
-
-var john =  Object.create(person);
-john.firstname = 'John';
-john.lastname = 'Doe';
-console.log(john);
+// temp
+confirm('This site is being fixed, for now please see my other portfolio: https://baccarelladev-portfolio.netlify.app/');
