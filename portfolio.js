@@ -183,6 +183,3 @@ mainNavbarLinks.addEventListener('click', function(e){
         toggleMobileNavMenu();
     } 
 });
-
-// temp
-confirm('This site is being fixed, for now please see my other portfolio: https://baccarelladev-portfolio.netlify.app/');
