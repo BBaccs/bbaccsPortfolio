@@ -112,6 +112,8 @@ btnShowAll.addEventListener('click', function () {
         const btnAllContainer = document.querySelector('#btnAllContainer');
         //insert html
         div.className = 'showAllAlertFailed';
+        div.setAttribute('role', 'alert');
+        div.setAttribute('aria-live', 'polite');
 
         //add text
         div.appendChild(document.createTextNode('All projects are already showing.'));
