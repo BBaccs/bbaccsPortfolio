@@ -94,6 +94,8 @@ btnShowAll.addEventListener('click', function () {
         const btnAllContainer = document.querySelector('#btnAllContainer');
         //insert html
         div.className = 'showAllAlert';
+        div.setAttribute('role', 'status');
+        div.setAttribute('aria-live', 'polite');
 
         //add text
         div.appendChild(document.createTextNode('Success! All projects are showing.'));
