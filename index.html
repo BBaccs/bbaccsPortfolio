@@ -435,7 +435,7 @@
 
       <!-- Contact -->
       <section id="container-contact" class="bg-color-secondary">
-        <h2 class="underlined-heading" id="contact-heading">
+        <h2 class="underlined-heading" id="contact-heading" >
           <span>Contact Me</span>
         </h2>
         <hr class="mb-40" />
@@ -457,16 +457,14 @@
             </ul>
           </div>
           <div class="contact bg-color-secondary">
-            <form id="contactForm" netlify>
-              <h2 class="off-screen-sr">
-                Fill out your contact information to get in touch
-              </h2>
+            <form id="contactForm" aria-labelledby="contact-heading" netlify>
               <p>
                 <label for="name">Name</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
+                  autocomplete="name"
                   placeholder="Person of contact"
                 />
               </p>
@@ -486,6 +484,7 @@
                   type="email"
                   name="email"
                   id="email"
+                  autocomplete="email"
                   required
                   placeholder="companyEmail@gmail.com"
                 />
@@ -496,6 +495,7 @@
                   type="text"
                   name="phone"
                   id="phone"
+                  autocomplete="tel-national"
                   placeholder="555-555-5555"
                 />
               </p>
