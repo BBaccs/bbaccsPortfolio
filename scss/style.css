@@ -633,6 +633,7 @@ div.contact-info h4,
           align-items: flex-start;
   background-color: #444444;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 /*JAVASCRIPT TOGGLE CLASSES*/
